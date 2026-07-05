@@ -9,6 +9,7 @@ export const COMPOUND_GROUP_ORDER = [
   "Reproductive, Sexual & Libido-Enhancing",
   'Hair, Skin, & Nails',
   "Other Peptides & Amino's",
+  'Bioregulators',
 ];
 
 export const GUIDE_GROUP_ORDER = [
