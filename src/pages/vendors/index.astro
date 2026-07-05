@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { VENDOR_GROUP_ORDER, groupBy } from '../../lib/groups';
+
+const vendors = await getCollection('vendors');
+vendors.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const grouped = groupBy(vendors, VENDOR_GROUP_ORDER);
+---
+<Layout title="Vendor Reviews">
+  <div class="wrap header">
+    <a class="back" href="/gray-market">&larr; The Gray Market</a>
+    <span class="chapter-label">The Shepherd's Ledger</span>
+    <h1>Vendor Reviews</h1>
+    <p class="lede">{vendors.length} vendor write-ups and buying guides &mdash; discernment before you tithe your money to anyone.</p>
+  </div>
+
+  <div class="wrap groups">
+    {grouped.map(({ group, items }) => (
+      <section class="group">
+        <h2>{group}</h2>
+        <div class="grid grid-cards">
+          {items.map((c) => (
+            <a class="card" href={`/vendors/${c.slug}`}>
+              <h3>{c.data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .header { padding: 40px 20px 24px; }
+  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
+  h1 { margin: 6px 0 6px; }
+  .lede { color: var(--text-muted); max-width: 600px; }
+  .groups { padding: 0 20px 60px; }
+  .group { margin-top: 40px; }
+  .group h2 {
+    margin-top: 0;
+    font-size: 1.15rem;
+    color: var(--navy);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+  }
+</style>

@@ -1,0 +1,86 @@
+---
+title: "GHK-Cu"
+group: "Healing, Recovery & Anti-Inflammatory"
+date: "2025-09-19 23:42:05"
+tags: []
+---
+### 🔹 **What is GHK-Cu?**
+
+**Class:** Naturally occurring tripeptide (Glycyl-L-histidyl-L-lysine) complexed with copper.
+**Mechanism:** Regulates gene expression related to tissue repair, anti-inflammatory pathways, antioxidant defense, and collagen synthesis. Promotes wound healing, angiogenesis, hair growth, and skin regeneration. Copper ion chelation enhances enzymatic activity for tissue remodeling and antioxidant defense.
+**Primary focus:** Tissue repair and regeneration, skin health, hair growth, anti-inflammatory effects, antioxidant support, and wound healing.
+
+---
+
+🔹 **Oral Dosage (least common)**
+**Range studied/used in research:** Oral bioavailability is negligible; peptide is largely degraded in the GI tract.
+**Typical protocol:** Oral administration is not recommended; systemic or topical routes are used for efficacy.
+**Notes:** Topical or injectable use is preferred for skin, hair, and tissue repair outcomes.
+
+---
+
+🔹 **Injectable / Sublingual Dosage (most common)**
+**Range:** 2–5 mg per day subcutaneously for regenerative purposes.
+**Frequency:** Daily injection, depending on the target tissue and goal.
+**Rationale:** Direct delivery ensures peptide reaches target tissues to promote collagen synthesis, angiogenesis, and repair mechanisms.
+
+---
+
+🔹 **Topical Dosage**
+**Range:** .5-3% GHK-Cu creams or serums applied 1–2 times daily.
+**Frequency:** Once or twice daily on target areas (skin, wounds, or hair regions).
+**Rationale:** Topical application allows localized delivery to enhance skin regeneration, collagen synthesis, hair follicle support, and wound healing without systemic exposure.
+**Notes:** Best applied to clean, hydrated skin for optimal absorption; may be combined with carrier creams for enhanced penetration.
+
+---
+
+🔹 **Cycle Length**
+**Common cycle length:** 4–12 weeks depending on tissue repair goals.
+**Off-cycle:** Breaks of 1–2 weeks can be used to monitor response or avoid receptor habituation.
+**Note:** Duration is based on anecdotal reports and experimental protocols; formal long-term studies are limited.
+
+---
+
+🔹 **Optimal Dosing Window**
+**Injectable / Topical / Sublingual:**
+
+- **Topical:** Morning or evening application on target areas.
+- **Injectable:** Flexible timing; can be taken once daily.
+
+**Notes:** Topical application may benefit from post-cleansing and skin hydration for improved absorption.
+
+---
+
+✅ **Educational Integration Example (topical / injectable)**
+
+- **Topical:** 1-2% GHK-Cu cream applied to face or injury site twice daily for 8 weeks. 3% GHK-Cu has been shown to help with hair growth on the scalp.
+- **Injectable:** 2 mg subcutaneous injection once daily for 6 weeks targeting systemic tissue repair.
+
+Pair with: Collagen support, antioxidants, vitamin C, and healthy lifestyle for maximal regenerative effect.
+
+---
+
+🔹 **Stacking Strategy (Educational)**
+Since GHK-Cu targets tissue repair, skin health, and regenerative pathways, stacking focuses on enhancing repair, anti-aging, and connective tissue support:
+🔸 **Skin & Tissue Repair**
+
+- BPC-157 or TB-500: Supports systemic connective tissue and injury recovery.
+- Collagen peptides: Enhance skin, joint, and connective tissue integrity.
+
+🔸 **Anti-Inflammatory & Antioxidant Support**
+
+- Epitalon: Supports cellular longevity and anti-aging pathways.
+- NAD⁺ precursors (NMN/NR): Enhance mitochondrial function and repair.
+
+🔸 **Hair & Vascular Support**
+
+- Copper and trace minerals: Complement GHK-Cu for hair growth and angiogenesis.
+- VIP or Adamax: Improve microcirculation and tissue resilience.
+
+**Studied in Humans?** Yes
+**FDA Approved?** Not FDA-approved as a *drug*, but the cosmetic form *is allowed in cosmetics/topical skin-care formulations* in the U.S.
+**Allowed for 503a Compounding Pharmacy?** No
+**Rory's Comment:** Thumbs Up.
+**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+ 
+**Dr. Bhatti**

@@ -1,0 +1,94 @@
+---
+const nav = [
+  { href: '/', label: 'Start Here' },
+  { href: '/gray-market', label: 'Go Deeper' },
+];
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="/images/pastor-peptide-mark-320.png" alt="" width="36" height="36" />
+      <span class="brand-name">Pastor Peptide</span>
+    </a>
+    <nav class="site-nav">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class={(item.href === '/' ? path === '/' : path.startsWith(item.href)) ? 'active' : ''}
+        >
+          {item.label}
+        </a>
+      ))}
+      <a href="https://bobbymcgraw.com" target="_blank" rel="noopener noreferrer">Meet the Pastor</a>
+      <a class="cta" href="https://calendly.com/bobbymcgraw/pastor-peptide-call" target="_blank" rel="noopener noreferrer">Book a Call</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(24,25,22,0.18);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    max-width: 900px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-mark {
+    display: block;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .brand-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--gold-light);
+    font-size: 1.05rem;
+    text-decoration: none;
+  }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .site-nav a {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .site-nav a:hover,
+  .site-nav a.active {
+    color: var(--gold-light);
+  }
+  .site-nav a.cta {
+    background: var(--gold);
+    color: var(--white);
+    padding: 7px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+  }
+  .site-nav a.cta:hover {
+    background: var(--amber-red);
+    color: var(--white);
+  }
+  @media (max-width: 640px) {
+    .bar { height: auto; padding: 12px 20px; }
+    .site-nav { gap: 14px; }
+  }
+</style>

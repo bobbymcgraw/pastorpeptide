@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const compounds = await getCollection('compounds');
+const guides = await getCollection('guides');
+const vendors = await getCollection('vendors');
+
+const sections = [
+  {
+    href: '/compounds',
+    title: 'The Peptide Encyclopedia',
+    sub: 'The Book of Peptides',
+    desc: "What each compound is, how it works, and how the congregation doses it — organized by category.",
+    count: compounds.length,
+  },
+  {
+    href: '/guides',
+    title: 'Guides & 101s',
+    sub: 'Sunday School Lessons',
+    desc: 'Reconstitution, storage, dosing math, COAs and lab testing, crypto payments, and community basics.',
+    count: guides.length,
+  },
+  {
+    href: '/vendors',
+    title: 'Vendor Reviews',
+    sub: "The Shepherd's Ledger",
+    desc: 'Write-ups on specific vendors and how kit-based overseas ordering works.',
+    count: vendors.length,
+  },
+];
+---
+<Layout title="The Gray Market">
+  <section class="section landing-hero">
+    <div class="wrap">
+      <a class="back" href="/">&larr; Back to the Starter Guide</a>
+      <span class="chapter-label">The Deeper Study</span>
+      <h1>The Gray Market</h1>
+      <p class="lede">
+        The Starter Guide got you through the basics. This is the rest of the library &mdash;
+        the full peptide-by-peptide scripture, the testing and dosing lessons, and the vendor
+        write-ups the congregation actually trusts. Educational content only, pulled from
+        years of community write-ups.
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap sections">
+    <div class="grid grid-cards">
+      {sections.map((s) => (
+        <a class="card section-card" href={s.href}>
+          <span class="chapter-label">{s.sub}</span>
+          <h3>{s.title}</h3>
+          <p>{s.desc}</p>
+          <span class="count">{s.count} articles &rarr;</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap disclaimer">
+    <div class="callout">
+      ⚕️ <strong>This is not medical advice.</strong> Nothing here replaces a qualified healthcare
+      provider. Peptides discussed on this site are not FDA-approved for human use except
+      where noted, and are shared for educational and harm-reduction purposes only.
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .landing-hero {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .back {
+    display: inline-block;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+  }
+  h1 {
+    margin: 8px 0 14px;
+  }
+  .lede {
+    color: var(--text-muted);
+    max-width: 640px;
+    font-size: 1.05rem;
+  }
+  .sections {
+    padding: 40px 20px;
+  }
+  .section-card h3 {
+    margin: 4px 0 8px;
+  }
+  .section-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin: 0 0 16px;
+  }
+  .count {
+    color: var(--navy);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .disclaimer {
+    padding: 0 20px 48px;
+  }
+</style>
