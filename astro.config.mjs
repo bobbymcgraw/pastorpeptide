@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://thegraymarket.net',
+  site: 'https://pastorpeptide.com',
   markdown: {
     shikiConfig: {
       theme: 'github-dark',
