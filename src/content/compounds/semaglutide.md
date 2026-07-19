@@ -81,6 +81,15 @@ Semaglutide
 - **Weeks 13–16**: 1.7 mg subcutaneously once weekly.
 - **Week 17 and onward**: 2.4 mg subcutaneously once weekly.
 
+**Standard clinical titration schedule (customized protocol):**
+
+- 0.25 mg SubQ weekly x 4 weeks
+- 0.5 mg SubQ weekly x 4 weeks
+- 1.0 mg SubQ weekly x 4 weeks
+- Reassess at each 4-week/7-week follow-up before increasing further or holding at the current dose.
+
+**Microdosing option:** Some clinicians split the lowest dose in half and administer it twice weekly instead of once weekly.
+
 **Paired with**:
 
 - Lifestyle modifications including dietary changes and physical activity.
@@ -115,15 +124,34 @@ Since semaglutide primarily targets glucose regulation and appetite suppression,
 
 ---
 
+🔹 **Broader Benefits**
+
+- Lipid reduction
+- Blood pressure reduction
+- Reduced inflammatory markers
+- Decreased oxidative stress
+- Decreased endothelial dysfunction and subclinical atherosclerosis
+- Enhanced beta-cell proliferation with anti-apoptotic effects
+- Enhanced glucose-dependent insulin secretion
+- Suppressed inappropriately elevated glucagon
+
+---
+
 ⚠️ **Safety Notes**
 
 - **Gastrointestinal side effects**: Nausea, diarrhea, and vomiting are common, especially during dose escalation.
 - **Hypoglycemia**: Monitor blood glucose levels, particularly in individuals with diabetes.
-- **Contraindications**: Not recommended for individuals with a history of medullary thyroid carcinoma or multiple endocrine neoplasia type 2.
+- **Contraindications**: Not recommended for individuals with a history of medullary thyroid carcinoma or multiple endocrine neoplasia type 2. Also contraindicated with personal or family history of MTC, personal history of Multiple Endocrine Neoplasia type 2 (MEN 2), or known allergy to semaglutide.
+- **Other considerations**: Use caution with a history of pancreatic disease, kidney disease, or diabetic retinopathy. Not known to be safe in pregnancy/breastfeeding — recommendation is to stop semaglutide 2 months before trying to conceive.
 - **Availability**: Approved for use in several countries, including the United States and European Union.
+
+**Clinical Pearls:**
+
+- Avoid alcohol 48–72 hours before lab testing (it can elevate pancreatic enzymes) and encourage good hydration.
+- Pancreatic enzymes (amylase/lipase) can rise with GLP-1/GIP use, usually without symptoms.
+- For symptomatic patients — abdominal pain, vomiting, diarrhea, fever, irregular stool — discontinue the medication and have them contact their provider, escalating urgently if it sounds severe.
 
 **Studied in Humans?** Yes
 **FDA Approved?** Yes
 **Allowed for 503a Compounding Pharmacy?** No (\*ongoing litigation, previously allowed under "shortage")
-**Rory's Comment**: Thumbs Up
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

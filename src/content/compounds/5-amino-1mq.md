@@ -84,7 +84,6 @@ Since 5-Amino-1MQ works by **preserving NAD⁺** and **enhancing metabolism**, s
 **Studied in Humans?** No
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
  
 [**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7533692205836406047)

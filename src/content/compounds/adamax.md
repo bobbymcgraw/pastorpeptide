@@ -79,5 +79,4 @@ Since Adamax targets **neuroplasticity, BDNF signaling, and neuroprotection**, t
 **Studied in Humans?** No
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

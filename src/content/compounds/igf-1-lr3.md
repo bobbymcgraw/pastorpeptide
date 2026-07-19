@@ -12,6 +12,7 @@ tags: []
 - Binds to the IGF-1 receptor, mimicking endogenous IGF-1, promoting **cellular growth, differentiation, and tissue repair**.
 - Long-arginine substitution (LR3) increases half-life (~20–30 hours), allowing sustained tissue exposure compared to native IGF-1.
 - Stimulates **muscle protein synthesis, bone growth, connective tissue repair, and recovery**.
+- Differs structurally from native IGF-1 by carrying an **arginine instead of a glutamic acid at the third amino acid position ("arginine 3")**, plus an additional sequence extension. This is what gives IGF-1 LR3 its much longer half-life and reduced binding to IGF-binding proteins (IGFBPs) compared to native IGF-1 — the reason it's used over native IGF-1 in practice.
 
 **Primary focus:** Muscle hypertrophy, tissue repair, connective tissue regeneration, recovery from injury, and anti-aging support.
 
@@ -32,6 +33,8 @@ tags: []
 - Daily injections are common; can be pre- or post-workout to maximize anabolic and regenerative effects.
 
 **Rationale:** Sustained exposure via LR3 modification allows low daily dosing to support muscle and connective tissue without excessive receptor overstimulation.
+
+**Alternative route — sublingual troche:** Some clinical protocols use a sublingual troche instead of injection. Female dosing example: **50 mcg sublingual troche every other day x 4 weeks.**
 
 ---
 
@@ -76,5 +79,4 @@ Since IGF-1 LR3 **directly stimulates anabolic and regenerative pathways**, comp
 **Studied in Humans?** No
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:**  Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

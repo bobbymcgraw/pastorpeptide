@@ -12,6 +12,7 @@ tags: []
 - Binds to the **ghrelin receptor (GHS-R1a)** in the pituitary, stimulating **endogenous growth hormone (GH) release**.
 - Highly selective for GH stimulation with minimal impact on cortisol or prolactin.
 - Promotes **pulsatile GH release**, supporting tissue repair, recovery, fat metabolism, and anti-aging effects.
+- GH receptors exist throughout the body—pituitary, stem cells, muscle, liver, bone, fat, immune cells, cardiac tissue, and more—which is part of why GH secretagogues like Ipamorelin have such wide-ranging effects.
 
 **Primary focus:**
 
@@ -34,6 +35,7 @@ tags: []
 - Often dosed **pre-bedtime or pre-workout** to align with natural GH pulses.
 
 **Rationale:** Low microgram doses stimulate GH release effectively without impacting cortisol/prolactin; subcutaneous injection ensures bioavailability.
+**Food-timing rule (GHRH/GHRP-class specific):** No food for up to 30 minutes after use, and no food for 1.5 hours prior to use. Carbohydrates and fatty acids can blunt GH release, while pure protein has no effect. This nutrient-timing sensitivity is specific to GHRH/GHRP-class peptides like Ipamorelin.
 
 ---
 
@@ -78,5 +80,4 @@ Since Ipamorelin is a **GH secretagogue**, complementary stacks focus on **enhan
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment**: Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

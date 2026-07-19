@@ -7,7 +7,7 @@ tags: []
 ### 🔹 **What is GHK-Cu?**
 
 **Class:** Naturally occurring tripeptide (Glycyl-L-histidyl-L-lysine) complexed with copper.
-**Mechanism:** Regulates gene expression related to tissue repair, anti-inflammatory pathways, antioxidant defense, and collagen synthesis. Promotes wound healing, angiogenesis, hair growth, and skin regeneration. Copper ion chelation enhances enzymatic activity for tissue remodeling and antioxidant defense.
+**Mechanism:** Regulates gene expression related to tissue repair, anti-inflammatory pathways, antioxidant defense, and collagen synthesis. Promotes wound healing, angiogenesis, hair growth, and skin regeneration. Copper ion chelation enhances enzymatic activity for tissue remodeling and antioxidant defense. Also used to help regenerate skin in diabetic skin ulcers specifically. Reported cosmetic benefits include stimulating hair growth, tightening loose skin, improving elasticity, improving skin density/firmness, reducing fine lines and wrinkles, reducing photodamage and hyperpigmentation, increasing keratinocyte proliferation, and stimulating nail growth.
 **Primary focus:** Tissue repair and regeneration, skin health, hair growth, anti-inflammatory effects, antioxidant support, and wound healing.
 
 ---
@@ -49,6 +49,8 @@ tags: []
 
 **Notes:** Topical application may benefit from post-cleansing and skin hydration for improved absorption.
 
+**Clinical pearl:** Some patients experience mild hypersensitivity—pruritus and erythema local to the injection site. Anything beyond mild local irritation warrants discontinuation. Screen patients for known copper sensitivities before starting.
+
 ---
 
 ✅ **Educational Integration Example (topical / injectable)**
@@ -80,7 +82,6 @@ Since GHK-Cu targets tissue repair, skin health, and regenerative pathways, stac
 **Studied in Humans?** Yes
 **FDA Approved?** Not FDA-approved as a *drug*, but the cosmetic form *is allowed in cosmetics/topical skin-care formulations* in the U.S.
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Up.
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
  
 **Dr. Bhatti**

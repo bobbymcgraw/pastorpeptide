@@ -61,7 +61,6 @@ Since Cagrilintide targets appetite suppression, gastric emptying, and weight ma
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Up.
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
  
 **Dr. Bhatti**

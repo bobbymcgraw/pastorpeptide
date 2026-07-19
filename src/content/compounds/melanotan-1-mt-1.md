@@ -72,5 +72,4 @@ Since MT-1 **primarily targets melanocortin receptors for pigmentation**, comple
 **Studied in Humans?** Yes
 **FDA Approved?** Not exactly, only FDA-approved for erythropoietic protoporphyria.
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Sideways
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

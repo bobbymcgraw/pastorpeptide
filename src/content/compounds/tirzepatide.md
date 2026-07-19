@@ -37,6 +37,8 @@ By activating these two receptors, tirzepatide aims to improve glycemic control,
 - **Frequency**: Once weekly.
 - **Rationale**: Weekly dosing aligns with the pharmacokinetics of tirzepatide, providing sustained receptor engagement.
 
+**Compounded formulation notes:** Some clinics compound Tirzepatide with **BPC-157 and Vitamin B6**, or alternatively with **Vitamin B12**, administered based on the patient's history, labs, and body composition.
+
 ---
 
 🔹 **Cycle Length**
@@ -85,14 +87,27 @@ Rationale: Combining tirzepatide with complementary agents can enhance weight lo
 
 ---
 
+🔹 **Clinical Pearl**
+
+- Some clinicians report Tirzepatide outperforming Semaglutide for weight loss specifically, likely due to its dual-receptor (GLP-1 + GIP) mechanism.
+
+---
+
 ⚠️ **Safety Notes**
 
 - **Gastrointestinal side effects**: Nausea, diarrhea, and vomiting are common, especially during dose escalation.
 - **Hypoglycemia**: Monitor blood glucose levels, particularly in individuals with diabetes.
 - **Contraindications**: Not recommended for individuals with a history of medullary thyroid carcinoma or multiple endocrine neoplasia type 2.
+- **Pancreatic enzyme monitoring**: Same contraindication and pancreatic-enzyme monitoring considerations apply here as with Semaglutide, given the shared GLP-1/GIP class effects — see the Semaglutide entry for the fuller monitoring protocol.
+- **Gallbladder disease**: Reported in about 0.6% of users in one study.
+- **Drug interactions**: GLP-1/GIP drugs delay gastric emptying, which can affect the absorption of other medications.
 - **Availability**: Approved for use in several countries, including the United States and European Union.
 
-**Rory's Comment:** Thumbs Up
+**Adjunct protocol for pre-existing GI conditions:** For patients with a pre-existing history of GERD or Barrett's Esophagus who are also on Tirzepatide, some clinicians use an adjunct protocol — this is not a general recommendation, only for patients with these specific histories:
+
+- **Hx of GERD**: Alka Seltzer Gold, AM/PM.
+- **Hx of Barrett's Esophagus**: Alka Seltzer Gold plus oral BPC-157, reported as protective — heals ulcers and helps prevent new damage.
+
 **Studied in Humans?** Yes
 **FDA Approved?** Yes
 **Allowed for 503a Compounding Pharmacy?** No (\*ongoing litigation, previously allowed under "shortage")

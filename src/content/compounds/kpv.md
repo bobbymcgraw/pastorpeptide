@@ -6,7 +6,7 @@ tags: []
 ---
 ### 🔹 **What is KPV?**
 
-**Class:** Tripeptide (Lys-Pro-Val), derived from alpha-Melanocyte Stimulating Hormone (α-MSH).
+**Class:** Tripeptide (Lys-Pro-Val), derived from alpha-Melanocyte Stimulating Hormone (α-MSH) — the anti-inflammatory activity of α-MSH is attributed specifically to these three N-terminal amino acids.
 **Mechanism:**
 
 - Exhibits **anti-inflammatory and immunomodulatory effects** via inhibition of NF-κB signaling.
@@ -21,6 +21,11 @@ tags: []
 ---
 
 🔹 **Oral Dosage:** Not practical; degraded in the GI tract. Only injectable, subcutaneous, or topical administration is effective.
+
+**Clinical dosing options in practice:**
+
+- **Capsule:** KPV 500 mcg capsules, one capsule PO twice daily.
+- **Topical:** KPV (2 mg/g) + Vitamin D3 (1,000 IU/g) compounded topical cream, applied via topi-click dispenser.
 
 ---
 
@@ -83,8 +88,14 @@ Since KPV is **anti-inflammatory and regenerative**, complementary stacks focus 
 - **CJC-1295 / Ipamorelin, Hexarelin:** Promote tissue repair via GH/IGF axis, synergizing with KPV’s anti-inflammatory effects.
 
 **Rationale:** KPV reduces local and systemic inflammation, enhancing the efficacy of regenerative and anabolic peptides while improving tissue repair outcomes.
+
+---
+
+⚠️ **Safety Notes**
+
+- Unlike alpha-MSH, KPV is **not reported to cause skin pigmentation** — a common concern with melanocortin-pathway compounds.
+- Reported safe and effective orally at recommended doses, with no notable side effects.
 **Studied in Humans?** No
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment**: Thumbs Up
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

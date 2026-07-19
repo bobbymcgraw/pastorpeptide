@@ -13,6 +13,9 @@ tags: []
 - Enhances **AMPK activation** → improves glucose uptake, fatty acid oxidation, and insulin sensitivity.
 - Supports **mitochondrial biogenesis** and protects against metabolic dysfunction.
 - Influences **exercise capacity, endurance, and recovery** by optimizing cellular energy utilization.
+- Promotes "browning" of white fat and increases brown adipose tissue thermogenic activity, likely mediated via the ERK signaling pathway — relevant to its metabolic/weight management effects.
+- Increases intracellular NAD+ levels via SIRT1, and activates AMPK — tying into cellular energy regulation and exercise adaptation (mitohormesis).
+- Being studied as a potential biomarker for metabolic health, with levels inversely correlated with markers of insulin resistance.
 
 **Primary focus:**
 
@@ -20,6 +23,8 @@ tags: []
 - Exercise performance and endurance.
 - Anti-aging and mitochondrial resilience.
 - Neuroprotective and cytoprotective roles.
+- Cardiovascular protection — research suggests MOTS-c may protect against vascular calcification and myocardial remodeling via AMPK activation.
+- Bone health — research suggests a role in osteoporosis prevention.
 
 ---
 
@@ -57,6 +62,7 @@ tags: []
 
 - Example protocol: **5 mg MOTS-c, 2x/week (Mon/Thu), subcutaneous injection**, for 8 weeks.
 - Paired with: Exercise regimen, balanced nutrition, NAD⁺ support.
+- **Clinical pearl:** The injection can cause local pruritus/irritation for 5–15 minutes. Some practitioners split the dose into two syringes and inject into both glutes to reduce the intensity of this reaction. Typical clinical protocol: once weekly for 4–6 weeks.
 
 ---
 
@@ -91,7 +97,6 @@ Since MOTS-c is a **mitochondrial optimizer and metabolic regulator**, stacking 
 **Studied in Humans?** No “MOTS-C” has human observational data (e.g., levels change with exercise) but no published trials administering MOTS-C to people; hence “NO” here.
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment**: Thumbs Sideways
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
  
 **Dr. Bhatti**

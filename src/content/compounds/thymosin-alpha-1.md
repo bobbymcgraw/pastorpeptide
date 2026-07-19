@@ -89,7 +89,6 @@ Since **Thymosin Alpha-1 enhances immune surveillance and balances inflammation*
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Up
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
  
 [**Dr. Bhatti Video**](https://www.tiktok.com/@sim.bhatti.md/video/7537842752260705567 "https://www.tiktok.com/@sim.bhatti.md/video/7537842752260705567")

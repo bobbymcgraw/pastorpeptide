@@ -91,7 +91,6 @@ Rationale: Combining SS-31 with complementary agents can enhance mitochondrial f
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment**: Thumbs Sideways
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
 **Dr. Bhatti Part 1**
 **Dr. Bhatti Part 2**

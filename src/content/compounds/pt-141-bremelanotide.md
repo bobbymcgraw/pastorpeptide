@@ -98,5 +98,4 @@ Rationale: PT-141 enhances **central arousal**, so stacking works best when pair
 **Studied in Humans?** Yes
 **FDA Approved?** Yes
 **Allowed for 503a Compounding Pharmacy?** Yes, but limited.
-**Rory's Comment:** Thumbs Up.
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

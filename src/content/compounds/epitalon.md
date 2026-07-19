@@ -6,7 +6,7 @@ tags: []
 ---
 ### 🔹 **What is Epitalon?**
 
-**Class:** Synthetic peptide—tetrapeptide (Ala-Glu-Asp-Gly) originally isolated from the pineal gland.
+**Class:** Synthetic peptide—tetrapeptide (Ala-Glu-Asp-Gly) originally isolated from the pineal gland. Molecular weight approximately 390.35 g/mol; sequence Alanine-Glutamate-Asparagine-Glycine.
 **Mechanism:** Activates telomerase in somatic cells, which may help maintain or elongate telomeres, protecting against cellular senescence. Regulates circadian rhythms, supports pineal gland function, and may influence melatonin production. Exhibits antioxidant and neuroprotective properties.
 **Primary focus:** Longevity, anti-aging, telomere maintenance, circadian rhythm support, cellular repair, and neuroprotection.
 
@@ -61,10 +61,14 @@ Since Epitalon targets telomere maintenance, circadian regulation, and cellular 
 - BPC-157 or TB-500: Supports systemic tissue repair and regenerative capacity.
 - Collagen and antioxidants: Aid cellular health and structural integrity.
 
+🔹 **Possible Side Effects**
+- Injection site erythema
+- Injection site pruritus
+- Peripheral edema
+
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:**  Thumbs Sideways.
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
  
 [**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7529685091803548959)

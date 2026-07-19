@@ -94,6 +94,5 @@ Rationale: Tesamorelin provides the **central GH drive**, while stacks target **
 **Studied in Humans?** Yes
 **FDA Approved?** Yes
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment**: Thumbs Sideways
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
 [**Dr. Bhatti - Video**](https://www.tiktok.com/@sim.bhatti.md/video/7524157406285270303)

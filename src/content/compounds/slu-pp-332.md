@@ -87,7 +87,6 @@ Rationale: Combining SLU-PP-332 with complementary agents can enhance **fat loss
 **Studied in Humans?** No
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory Comment**: Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
 **Dr. Bhatti Part 1**
 **Dr. Bhatti Part 2**

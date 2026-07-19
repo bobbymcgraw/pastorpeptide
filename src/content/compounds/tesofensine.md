@@ -6,12 +6,14 @@ tags: []
 ---
 ### 🔹 **What is Tesofensine?**
 
-**Class:** Small-molecule triple monoamine reuptake inhibitor (serotonin, norepinephrine, dopamine).
+**Class:** Small-molecule triple monoamine reuptake inhibitor (serotonin, norepinephrine, dopamine) — also known as NS2330, a serotonin-noradrenaline-dopamine reuptake inhibitor ("triple reuptake inhibitor") from the phenyltropane family of drugs.
 **Mechanism:**
 
 - Inhibits reuptake of **dopamine, norepinephrine, and serotonin**, enhancing satiety and reducing appetite.
 - Increases basal metabolic rate and may enhance lipolysis indirectly via sympathetic nervous system activation.
 - Originally investigated for obesity management; also studied for potential cognitive and neuroprotective effects.
+
+**History:** Tesofensine was originally developed by NeuroSearch, a Danish biotechnology company, which transferred the rights to Saniona in 2014. It was originally being explored for Alzheimer's and Parkinson's disease but was discontinued for those uses as of 2019 after early trials showed limited efficacy; weight loss was consistently reported as an adverse event in those studies, which led to development continuing for obesity instead.
 
 **Primary focus:** Appetite suppression, fat loss, metabolic rate increase, and potential improvements in body composition.
 
@@ -26,6 +28,12 @@ tags: []
 **Frequency:** Once daily, usually in the morning to minimize sleep disruption.
 **Rationale:** Long half-life (~9–10 days) allows for once-daily dosing; morning administration helps align peak satiety effects with daytime meals.
 **Notes:** Strong appetite suppression may occur; start at lower doses to gauge tolerance.
+
+**Capsule dosing options:**
+
+- 0.25 mg capsule — one capsule PO daily.
+- 0.5 mg capsule — one capsule PO daily.
+- 1.0 mg capsule — one capsule PO daily.
 
 ---
 
@@ -71,8 +79,14 @@ Tesofensine primarily targets appetite suppression and metabolic rate. Complemen
 - **Electrolyte and hydration management:** Essential if appetite suppression reduces food/water intake.
 
 **Rationale:** Tesofensine is a potent appetite suppressant with metabolic benefits; complementary strategies maximize fat loss outcomes, preserve lean mass, and maintain cardiovascular and metabolic health.
+
+---
+
+⚠️ **Safety Notes**
+
+- **Most common side effects:** dry mouth, headache, nausea, insomnia, diarrhea, constipation.
+- **Phase II trial safety data:** Saniona reported a low incidence of increased heart rate, with no significant effect on blood pressure.
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

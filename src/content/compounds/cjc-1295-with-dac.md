@@ -7,7 +7,7 @@ tags: []
 ### 🔹 **What is CJC-1295 with DAC?**
 
 **Class:** Synthetic peptide—growth hormone-releasing hormone (GHRH) analogue with Drug Affinity Complex (DAC) modification to extend half-life.
-**Mechanism:** Stimulates the pituitary to release endogenous growth hormone (GH) by binding to GHRH receptors. DAC modification prolongs plasma half-life, allowing sustained GH release over 6–8 days per injection. Enhances IGF-1 production indirectly, supporting anabolic, regenerative, and metabolic pathways.
+**Mechanism:** Stimulates the pituitary to release endogenous growth hormone (GH) by binding to GHRH receptors. DAC modification prolongs plasma half-life, allowing sustained GH release over 6–8 days per injection. Enhances IGF-1 production indirectly, supporting anabolic, regenerative, and metabolic pathways. DAC's binding is >90% to serum albumin, and a measurable concentration persists 6–8 days after just a single dose, elevating both GH and IGF-1 for several days after one administration.
 **Primary focus:** Increase GH and IGF-1 levels, support muscle growth, fat metabolism, recovery, tissue repair, anti-aging effects, and overall anabolic resilience.
 
 ---
@@ -23,6 +23,7 @@ tags: []
 **Range:** Commonly used at 1–2 mg per week subcutaneously in clinical and anecdotal settings. Some protocols start at 0.5 mg/week to assess tolerance.
 **Frequency:** Typically once weekly due to DAC’s extended half-life.
 **Rationale:** DAC prolongs GH release, reducing the need for daily injections while maintaining stable IGF-1 and GH levels.
+**Injection tip:** Inject slowly after the jab—the medication is received by the pituitary very quickly, and injecting slowly helps reduce facial flushing, feeling warm, and rare, short-lived tachycardia.
 
 ---
 
@@ -35,6 +36,8 @@ tags: []
 
 🔹 **Optimal Dosing Window**
 **Injectable / Subcutaneous:** Any time of day, though some users prefer evening dosing to coincide with natural GH peaks during sleep. DAC modification allows flexible timing without compromising effect.
+
+**Clinical pearl:** Because DAC produces sustained elevation, it can bring the IGF-1 response above normal physiologic levels. This can be advantageous short-term for specific goals like burns or significant soft-tissue injury recovery post-surgery, but represents a different profile than the more pulsatile release seen with shorter-acting secretagogues.
 
 ---
 
@@ -64,5 +67,4 @@ Since CJC-1295 with DAC targets GH/IGF-1 pathways, stacks focus on anabolic supp
 **Studied in Humans?** Yes
 **FDA Approved?** No
 **Allowed for 503a Compounding Pharmacy?** No
-**Rory's Comment:** Thumbs Down
 **Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.

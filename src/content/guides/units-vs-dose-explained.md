@@ -1,5 +1,5 @@
 ---
-title: "Units vs Dose Explained by Rory"
+title: "Units vs. Dose, Explained"
 group: "Peptide 101"
 date: "2025-09-28 12:47:46"
 tags: []
