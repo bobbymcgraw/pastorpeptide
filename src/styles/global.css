@@ -283,6 +283,31 @@ img {
 }
 .warn-card strong { color: var(--clay); }
 
+.quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  background: var(--cream-dark);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 20px;
+  margin: 24px 0;
+}
+.quick-facts p {
+  margin: 0;
+  flex: 1 1 220px;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.quick-facts strong { color: var(--navy); }
+
+.disclaimer-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 14px;
+}
+
 .progression { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
 .prog-item {
   display: flex;

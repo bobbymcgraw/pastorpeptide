@@ -6,7 +6,7 @@ tags: []
 ---
 ### 🔹 **What is CJC-1295 (No DAC)?**
 
-**Class:** Synthetic peptide—growth hormone-releasing hormone (GHRH) analogue without Drug Affinity Complex.
+**Class:** Synthetic peptide—growth hormone-releasing hormone (GHRH) analogue without Drug Affinity Complex. Also commonly sold and referred to as **Mod-GRF (1-29)** — same compound, different name, distinct from CJC-1295 *with* DAC (covered separately on this site).
 **Mechanism:** Stimulates the pituitary gland to release endogenous growth hormone (GH) by binding to GHRH receptors. Lacks DAC, so it has a shorter half-life (~30–40 minutes), requiring more frequent dosing to maintain GH pulses. Enhances IGF-1 production indirectly, supporting anabolic, regenerative, and metabolic pathways.
 **Primary focus:** Increase GH and IGF-1 levels, support muscle growth, fat metabolism, recovery, tissue repair, anti-aging effects, and anabolic resilience.
 
@@ -61,7 +61,10 @@ Since CJC-1295 (No DAC) targets GH/IGF-1 pathways with shorter pulses, stacks ca
 - NAD⁺ precursors (NMN/NR): Supports mitochondrial energy for GH-mediated regenerative benefits.
 - Sleep hygiene and lifestyle: Critical for maximizing GH pulse effectiveness and tissue recovery.
 
-**Studied in Humans?** No
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

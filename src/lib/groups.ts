@@ -14,7 +14,7 @@ export const COMPOUND_GROUP_ORDER = [
 
 export const GUIDE_GROUP_ORDER = [
   'Peptide 101',
-  'Gray Market 101',
+  'Seminary 101',
   'Peptide Stacks',
   'COAs & Lab Testing',
   'Paying With Crypto',

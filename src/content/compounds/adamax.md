@@ -76,7 +76,10 @@ Since Adamax targets **neuroplasticity, BDNF signaling, and neuroprotection**, t
 - **Epitalon or FOXO4-DRI:** Longevity peptides targeting telomere extension or senescent cell clearance.
 - **NAD⁺ precursors (NMN/NR):** Metabolic support to sustain cognitive energy—a good ally for prolonged nootropic use.
 
-**Studied in Humans?** No
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

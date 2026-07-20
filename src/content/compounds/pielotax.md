@@ -64,7 +64,11 @@ Since Pielotax is focused on **renal regeneration, antioxidant protection, and d
 - **Ventfort:** Broader vascular and antioxidant-oriented bioregulator that may pair conceptually with Pielotax's oxidative-stress protection angle.
 
 **Rationale:** Pielotax targets renal tissue specifically; stacking aims to **reinforce whole-body detoxification and antioxidant defense** without duplicating the same localized mechanism.
-**Studied in Humans?** Limited (primarily Russian/Eastern European research, minimal Western clinical trials)
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Limited (primarily Russian/Eastern European research, minimal Western clinical trials)</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

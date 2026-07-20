@@ -65,7 +65,11 @@ Since Zhenoluten is organ-specific to the **ovaries and female hormonal axis**, 
 - Tissue-repair-oriented bioregulators may be considered alongside Zhenoluten for conditions like PCOS or endometriosis where inflammation is a driving factor.
 
 **Rationale:** Zhenoluten's mechanism is specific to ovarian tissue and the female hormonal cycle, so stacking logic centers on reinforcing hormonal balance and reducing reproductive-system inflammation rather than combining with unrelated organ-specific bioregulators.
-**Studied in Humans?** Limited (primarily Russian/Eastern European research, minimal Western clinical trials)
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Limited (primarily Russian/Eastern European research, minimal Western clinical trials)</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

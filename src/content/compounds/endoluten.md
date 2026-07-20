@@ -58,7 +58,11 @@ Since Endoluten is centered on **pineal function, melatonin regulation, and long
 - **Glandokort:** Adrenal-focused bioregulator sometimes combined for broader endocrine balance alongside Endoluten's pineal-focused effects.
 
 **Rationale:** Endoluten targets pineal gland function specifically; stacking aims to **reinforce circadian health and broader hormonal balance** without duplicating mechanisms unnecessarily.
-**Studied in Humans?** Limited (primarily Russian/Eastern European research, minimal Western clinical trials)
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Limited (primarily Russian/Eastern European research, minimal Western clinical trials)</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

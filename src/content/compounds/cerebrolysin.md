@@ -6,12 +6,14 @@ tags: []
 ---
 ### 🔹 **What is Cerebrolysin?**
 
-**Class:** Neuropeptide-based preparation derived from purified porcine brain protein — distinct from the short synthetic Khavinson-style bioregulators in that it's a peptide fraction mixture rather than a single defined tetra/tripeptide, and is administered by injection rather than orally.
+**Class:** Neuropeptide-based preparation derived from purified porcine brain protein — distinct from the short synthetic Khavinson-style bioregulators in that it's a peptide fraction mixture rather than a single defined tetra/tripeptide, and is administered by injection rather than orally. Rather than one active molecule, Cerebrolysin is actually a **combination of several active peptide fragments**, including nerve growth factor (NGF), BDNF, ciliary nerve growth factor, P-21, enkephalins, and orexin-related components — a true multi-component neuropeptide preparation.
 **Mechanism:**
 
 - Reduces oxidative stress at the neuronal level, helping limit damage and programmed cell death (apoptosis) in brain tissue.
 - Encourages neurogenesis and new synaptic connections, supporting brain plasticity and structural repair.
 - Modulates neurotransmitter activity and supports synaptic plasticity, contributing to improved learning, memory, and mental clarity.
+- Its low molecular weight allows it to cross both the **blood-brain barrier** and the **blood-cerebrospinal fluid barrier**.
+- In dementia/Alzheimer's-adjacent research contexts: reduces amyloid deposition and phosphorylated amyloid precursor protein (APP) accumulation, reduces perivascular microgliosis/astrogliosis, and increases markers of vascular fitness (CD31, ZO-1).
 
 **Primary focus:**
 
@@ -61,7 +63,11 @@ Since Cerebrolysin is centered on **neuroprotection, neurogenesis, and cognitive
 - **Epitalon:** Longevity-oriented bioregulator sometimes paired with neuro-focused protocols for broader cellular support.
 
 **Rationale:** Cerebrolysin delivers a more intensive, clinically-dosed neurological intervention; stacking with lighter oral bioregulators aims to **extend or maintain gains** between courses rather than duplicate the mechanism.
-**Studied in Humans? Yes, extensively** — Cerebrolysin is an approved pharmaceutical in Russia, parts of Europe, and Asia for stroke, traumatic brain injury, and dementia, and has a substantial body of published clinical research behind it (though it remains unapproved in the US).
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans? Yes, extensively</strong> — Cerebrolysin is an approved pharmaceutical in Russia, parts of Europe, and Asia for stroke, traumatic brain injury, and dementia, and has a substantial body of published clinical research behind it (though it remains unapproved in the US).</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

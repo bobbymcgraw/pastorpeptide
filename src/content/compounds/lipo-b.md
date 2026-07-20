@@ -71,7 +71,11 @@ Since Lipo-B supports fat metabolism and liver/energy function rather than actin
 - **CoQ10, L-Carnitine:** Support mitochondrial fat-burning capacity.
 
 **Rationale:** Lipo-B fills the metabolic-support and liver-health gap in a stack rather than driving the primary weight-loss mechanism, which is why it's so often paired with GLP-1-class compounds.
-**Studied in Humans?** Yes — lipotropic injections have a long history of clinical use, though mostly through practice-based evidence rather than large randomized trials of the combined formulation.
-**FDA Approved?** The individual components (B12, B6, etc.) are FDA-approved as nutrients/drugs in their own right, but the fixed-dose Lipo-B combination itself is not an FDA-approved product.
-**Allowed for 503a Compounding Pharmacy?** Yes — commonly compounded.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes — lipotropic injections have a long history of clinical use, though mostly through practice-based evidence rather than large randomized trials of the combined formulation.</p>
+<p><strong>FDA Approved?</strong> The individual components (B12, B6, etc.) are FDA-approved as nutrients/drugs in their own right, but the fixed-dose Lipo-B combination itself is not an FDA-approved product.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes — commonly compounded.</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

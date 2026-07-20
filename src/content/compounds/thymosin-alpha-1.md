@@ -7,8 +7,8 @@ tags: []
 ## 🔹 What is Thymosin Alpha-1?
 
 **Class:** Synthetic peptide fragment derived from thymosin fraction 5, originally isolated from the thymus gland.
-**Mechanism:** Enhances **T-cell function**, increases **immune surveillance**, modulates **cytokine production**, and reduces **chronic inflammation**.
-**Primary focus:** Immune optimization, anti-viral defense, cancer immunotherapy support, and reducing chronic low-grade inflammation.
+**Mechanism:** Enhances **T-cell function**, increases **immune surveillance**, modulates **cytokine production**, and reduces **chronic inflammation**. TA1 also functions as a genuine **senolytic agent** — it directly supports apoptosis of senescent ("zombie") cells, upregulates glutathione, and improves cellular redox balance. It initiates **IL-10 transcription**, contributing to a broader "senomodulation" effect on the immune system. Mechanistically, senescent cells use a kind of molecular camouflage to evade immune detection; TA1 helps strip that camouflage away, improving the ability of **natural killer (NK) cells** to find and clear senescent cells.
+**Primary focus:** Immune optimization, anti-viral defense, cancer immunotherapy support, cellular senescence/senolytic support, and reducing chronic low-grade inflammation.
 
 ---
 
@@ -29,6 +29,15 @@ tags: []
 **Range:** **1.5–3 mg, 2–3x per week** (some protocols go up to 4.5 mg, 3x/week).
 **Frequency:** Every other day or 2–3x weekly depending on immune status and research goals.
 **Rationale:** Direct subQ bypasses degradation, ensuring strong immunomodulatory effect.
+
+Real-world compounded example: **15 mg vial**, dosed at **450 mcg SQ daily for 30 days**, for immune modulation.
+
+---
+
+## 🔹 Intranasal Dosage
+
+**Real-world compounded example:** **2,000 mcg/ml (15 ml nasal spray bottle)** — dosed at **1–2 sprays intranasally daily or as needed**, for immune modulation.
+**Notes:** A non-invasive alternative to the injectable route for ongoing immune support.
 
 ---
 
@@ -71,7 +80,7 @@ Since **Thymosin Alpha-1 enhances immune surveillance and balances inflammation*
 
 ### 🔸 Immune & Viral Defense
 
-- **Thymosin Beta-4 (TB-500)** – synergistic tissue repair + immune modulation.
+- **Thymosin Beta-4 (TB-500)** – synergistic tissue repair + immune modulation. TA1 and TB4 are frequently framed together as a complementary immune/senescence-fighting pair — TA1 driving senolytic clearance and immune surveillance while TB4 drives tissue repair.
 - **LL-37** – antimicrobial peptide for bacterial/viral protection.
 - **Selank** – anxiolytic peptide that also supports immune balance.
 
@@ -86,9 +95,12 @@ Since **Thymosin Alpha-1 enhances immune surveillance and balances inflammation*
 - Thymosin Alpha-1 + **Epitalon** (pineal peptide for longevity)
 - Add-on: **GH secretagogues (Ipamorelin + CJC-1295)** to support thymic and immune rejuvenation.
 
-**Studied in Humans?** Yes
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
- 
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
+
 [**Dr. Bhatti Video**](https://www.tiktok.com/@sim.bhatti.md/video/7537842752260705567 "https://www.tiktok.com/@sim.bhatti.md/video/7537842752260705567")

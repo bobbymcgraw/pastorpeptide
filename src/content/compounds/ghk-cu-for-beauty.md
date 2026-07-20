@@ -21,7 +21,7 @@ This method involves injecting GHK-Cu just beneath the skin, where it gradually 
 
 **Best Uses:**
 SubQ GHK-Cu is typically considered when the goal is **therapeutic regeneration**, for example, injury recovery, joint/tendon support, post-surgical healing, or systemic anti-aging. It’s less common in cosmetic routines since topical or microneedling delivery is easier and very effective for skin. **Always consult a medical professional before use.**
- 
+
 **Cosmetic/Topical Form**: The most common and widely researched form of GHK-Cu, available in serums, creams, and lotions.
 **Benefits:**
 
@@ -30,7 +30,7 @@ SubQ GHK-Cu is typically considered when the goal is **therapeutic regeneration*
 - **Antioxidant & Anti-inflammatory:** Protects against free radical damage while soothing redness and irritation.
 
 **Best Uses:** Ideal for daily skincare routines focused on anti-aging and repairing skin damage. Can be applied directly to the face and body.
- 
+
 **Essential Components of a GHK-Cu Serum**
 A basic GHK-Cu serum formulation typically includes:
 

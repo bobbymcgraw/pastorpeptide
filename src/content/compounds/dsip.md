@@ -6,9 +6,10 @@ tags: []
 ---
 ### 🔹 **What is DSIP?  (Delta Sleep Inducing Peptide)**
 
-**Class:** Endogenous neuropeptide—short peptide (tridecapeptide, 9–13 amino acids) naturally produced in the brain and other tissues.
-**Mechanism:** Modulates sleep architecture, reduces stress-related hormone activity (cortisol), and may influence thermoregulation, pain perception, and mood. Thought to interact with GABAergic and other neurotransmitter systems to promote slow-wave (deep) sleep.
+**Class:** Endogenous neuropeptide—short peptide (tridecapeptide, 9–13 amino acids) naturally produced in the brain and other tissues. First isolated in rabbits; a similar peptide is found in high concentrations in human milk.
+**Mechanism:** Modulates sleep architecture, reduces stress-related hormone activity (cortisol), and may influence thermoregulation, pain perception, and mood. Thought to interact with GABAergic and other neurotransmitter systems to promote slow-wave (deep) sleep. Also acts as an anticonvulsant, attenuates corticotrophin releasing factor at the pituitary gland, and decreases excitotoxicity through its influence on NMDA-subtype glutamate receptors. DSIP crosses the blood-brain barrier and follows a diurnal (day/night) secretion pattern, consistent with its role in sleep regulation. It has a short half-life of just 7–8 minutes.
 **Primary focus:** Sleep quality improvement (especially deep sleep), stress reduction, recovery enhancement, potential analgesic and mood-stabilizing effects, and mild neuroprotective properties.
+**Molecular profile:** Sequence: Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu. MW 849.
 
 ---
 
@@ -22,6 +23,7 @@ tags: []
 🔹 **Injectable / Sublingual / Intranasal Dosage (most common)**
 **Range:** Commonly used at 100–500 µg per dose subcutaneously, intranasally, or sublingually. Some protocols use 1 mg/day split into multiple doses.
 **Frequency:** Typically 1–2 times daily, with evening dosing favored to align with sleep cycles.
+**Real-world example:** A common compounding pharmacy protocol uses a 1000 mcg/ml vial dosed at 100 mcg subcutaneously nightly, used as-needed for sleep.
 **Rationale:** Direct administration ensures central nervous system access and reliable modulation of sleep-related pathways.
 
 ---
@@ -61,9 +63,12 @@ Since DSIP primarily targets sleep, stress modulation, and recovery, stacking fo
 - NAD⁺ precursors (NMN/NR): Support cellular repair and recovery during deep sleep phases.
 - Quality nutrition and exercise: Enhance recovery and GH release during sleep.
 
-**Studied in Humans?** Yes
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
- 
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
+
 [**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7530785745896787231)

@@ -82,8 +82,12 @@ Since Lipo-C **enhances fat metabolism and energy production**, complementary st
 - **Amino acids / protein supplementation:** Preserve lean mass during fat loss.
 
 **Rationale:** Lipo-C provides a **targeted metabolic cofactor boost**; stacking enhances systemic fat oxidation, energy, and mitochondrial function without duplicating mechanisms.
-**Studied in Humans?** Yes (limited). "Glow/Klow” and “Lipo-C” are proprietary blends/marketing names; the specific blends haven’t been studied as such in humans, even though some individual ingredients have.
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** Yes
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes (limited). "Glow/Klow" and "Lipo-C" are proprietary blends/marketing names; the specific blends haven't been studied as such in humans, even though some individual ingredients have.</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes</p>
+</div>
+
 **Note:** It is important to pay careful attention to the contents of your vendors Lipo-C as many are underdosed. Do your due diligence and ensure the product you are getting is dosed properly for your goals.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

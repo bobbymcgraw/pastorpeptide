@@ -83,7 +83,11 @@ Since GHK Base targets skin and tissue regeneration without copper's added enzym
 - **Vitamin C and collagen peptides:** Support the same collagen-synthesis pathways GHK Base activates.
 
 **Rationale:** GHK Base offers a gentler, copper-free entry point into GHK-family peptides; stacking focuses on reinforcing collagen and repair pathways rather than duplicating hormonal signaling.
-**Studied in Humans?** Limited — most available data comes from cosmetic and topical dermatology research rather than large controlled human trials.
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Limited — most available data comes from cosmetic and topical dermatology research rather than large controlled human trials.</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

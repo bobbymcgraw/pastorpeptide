@@ -151,7 +151,10 @@ Since semaglutide primarily targets glucose regulation and appetite suppression,
 - Pancreatic enzymes (amylase/lipase) can rise with GLP-1/GIP use, usually without symptoms.
 - For symptomatic patients — abdominal pain, vomiting, diarrhea, fever, irregular stool — discontinue the medication and have them contact their provider, escalating urgently if it sounds severe.
 
-**Studied in Humans?** Yes
-**FDA Approved?** Yes
-**Allowed for 503a Compounding Pharmacy?** No (\*ongoing litigation, previously allowed under "shortage")
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No (\*ongoing litigation, previously allowed under "shortage")</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

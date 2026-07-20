@@ -143,7 +143,11 @@ Since **GLOW70/KLOW80** already provide the main regenerative and anti-inflammat
 - Hydration and electrolytes optimize cellular environment for peptide efficacy.
 
 **Rationale:** These complementary strategies provide substrates, cofactors, vascular support, and systemic recovery enhancement, maximizing the regenerative and anti-inflammatory effects of the GLOW/KLOW blends.
-**Studied in Humans?** No. Glow/Klow” are proprietary blends/marketing names; the specific blends haven’t been studied as such in humans, even though some individual ingredients have.
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No. Glow/Klow” are proprietary blends/marketing names; the specific blends haven’t been studied as such in humans, even though some individual ingredients have.</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

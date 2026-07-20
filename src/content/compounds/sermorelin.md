@@ -42,6 +42,13 @@ Frequency:
 
 Rationale: SC injection ensures **reliable absorption** and physiologic mimicry of GH secretion.
 
+Real-world compounded dose-strength tiers:
+
+- **9 mg vial**: dosed at **300 mcg SQ nightly for 30 days**.
+- **15 mg vial (stronger tier)**: dosed at **500 mcg SQ nightly for 30 days**.
+
+These represent two strengths a patient/practitioner might choose between depending on goals, with the 15 mg vial supporting a higher nightly dose for those seeking a more aggressive protocol.
+
 ---
 
 🔹 **Cycle Length**
@@ -93,7 +100,10 @@ Rationale: Sermorelin provides the **natural GH drive**, while stacks emphasize 
 - Contraindicated in active cancer, uncontrolled diabetes, or hypersensitivity to peptides.
 - Generally well tolerated; longer-term studies show good safety in adults using physiologic doses.
 
-**Studied in Humans?** Yes
-**FDA Approved?** No \*previously allowed, currently not approved.
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No \*previously allowed, currently not approved.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

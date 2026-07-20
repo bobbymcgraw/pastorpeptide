@@ -43,6 +43,15 @@ Frequency:
 
 Rationale: Works centrally, so effects often last well beyond plasma clearance.
 
+Real-world compounded example: **PT-141 w/ B6, 10,000 mcg/ml vial (2 ml)** — dosed at **0.1 ml SQ for males** and **0.2 ml SQ for females**, injected **30 minutes to 6 hours prior to sexual activity**. The added vitamin B6 is a common compounding pharmacy practice paired with PT-141; it's not considered a primary driver of the peptide's effect.
+
+---
+
+🔹 **Intranasal Dosage**
+
+- **PT-141 w/ B6, 5,000 mcg (10 ml nasal spray bottle)** — dosed at **2–4 sprays per nostril**, **30–60 minutes prior to sexual activity**.
+- Offers a needle-free alternative to the SQ injection route, though absorption consistency may vary compared to injectable delivery.
+
 ---
 
 🔹 **Cycle Length**
@@ -95,7 +104,10 @@ Rationale: PT-141 enhances **central arousal**, so stacking works best when pair
 - Overuse may desensitize melanocortin receptors or blunt natural arousal pathways.
 - FDA-approved as **Vyleesi®** for women with hypoactive sexual desire disorder (HSDD).
 
-**Studied in Humans?** Yes
-**FDA Approved?** Yes
-**Allowed for 503a Compounding Pharmacy?** Yes, but limited.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes, but limited.</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

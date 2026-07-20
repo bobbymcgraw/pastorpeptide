@@ -76,7 +76,11 @@ Since oxytocin's primary lane is emotional/social and libido-adjacent, complemen
 - **PT-141:** A separately-mechanism libido-focused peptide sometimes discussed alongside oxytocin for a broader intimacy-support approach, though the two work through distinct pathways.
 
 **Rationale:** Oxytocin's bonding and anxiety-reducing effects are its own contribution; stacking logic here is about complementary emotional/intimacy support rather than amplifying a shared biological pathway.
-**Studied in Humans?** Yes, extensively.
-**FDA Approved?** Yes — as Pitocin, for labor induction and postpartum hemorrhage management; the bonding, anxiety, and libido-related uses discussed here are separate, off-label/research applications.
-**Allowed for 503a Compounding Pharmacy?** Yes — commonly compounded, particularly as an intranasal formulation.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes, extensively.</p>
+<p><strong>FDA Approved?</strong> Yes — as Pitocin, for labor induction and postpartum hemorrhage management; the bonding, anxiety, and libido-related uses discussed here are separate, off-label/research applications.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes — commonly compounded, particularly as an intranasal formulation.</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

@@ -70,7 +70,11 @@ Since Thymogen is a **T-cell and cytokine-modulating dipeptide**, complementary 
 - General tissue-repair bioregulators to support broader recovery during immune-taxing periods.
 
 **Rationale:** Thymogen's tightly defined immune mechanism means stacking logic is about reinforcing immune resilience during a specific window rather than adding unrelated hormonal or organ-specific bioregulators.
-**Studied in Humans?** Yes — Thymogen is one of the more established Khavinson-group bioregulators, with a real history of Russian clinical trial work specifically around immune modulation, setting it apart from most of this category's more limited research base.
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes — Thymogen is one of the more established Khavinson-group bioregulators, with a real history of Russian clinical trial work specifically around immune modulation, setting it apart from most of this category's more limited research base.</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

@@ -62,7 +62,11 @@ Since BioBoost supports general nutrient status, energy metabolism, and gut/immu
 - **L-Carnitine, NAD⁺ precursors (NMN, NR):** Complementary support for mitochondrial energy production alongside BioBoost's broader nutrient base.
 
 **Rationale:** BioBoost isn't trying to compete with hormone- or receptor-driven compounds — it fills in the nutrient and general-wellness gaps underneath them, which is why it shows up so often as a supporting player rather than the centerpiece of a protocol.
-**Studied in Humans?** Yes — the individual nutrients (B-vitamins, minerals, antioxidants) that make up BioBoost each have a long clinical history on their own, though the specific fixed-dose blend itself hasn't been studied as a standalone clinical entity.
-**FDA Approved?** No — not as a combination product. Several of the individual ingredients (like Vitamin B12) are FDA-approved on their own, but the BioBoost blend as formulated is not.
-**Allowed for 503a Compounding Pharmacy?** Yes — commonly compounded.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes — the individual nutrients (B-vitamins, minerals, antioxidants) that make up BioBoost each have a long clinical history on their own, though the specific fixed-dose blend itself hasn't been studied as a standalone clinical entity.</p>
+<p><strong>FDA Approved?</strong> No — not as a combination product. Several of the individual ingredients (like Vitamin B12) are FDA-approved on their own, but the BioBoost blend as formulated is not.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes — commonly compounded.</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

@@ -72,8 +72,12 @@ Rationale: Topical combination enhances wrinkle reduction, skin firmness, and ov
 - **No systemic effects** observed with topical use at cosmetic doses.
 - **Storage**: Keep in a **cool, dark place** to maintain peptide stability.
 
-**Studied in Humans?** Yes
-**FDA Approved?** No, but it is recognized under INCI (International Nomenclature Cosmetic Ingredient) and commonly used in skincare.
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No, but it is recognized under INCI (International Nomenclature Cosmetic Ingredient) and commonly used in skincare.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
+
 [**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7531161247799086366)

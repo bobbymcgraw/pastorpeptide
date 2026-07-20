@@ -1,6 +1,6 @@
 ---
 title: "What is the Gray Market?"
-group: "Gray Market 101"
+group: "Seminary 101"
 date: "2025-10-08 11:57:48"
 tags: []
 ---

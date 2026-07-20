@@ -35,6 +35,7 @@ tags: []
 - Once or twice daily subcutaneous injections are common in studies.
 
 **Rationale:** Short peptide with rapid onset; subcutaneous injection ensures bioavailability and receptor engagement.
+**Real-world example:** A compounding pharmacy protocol uses a 1000 mcg/ml vial (5ml), dosed at 100 mcg subcutaneously nightly for 30 days, indicated for increasing LH (luteinizing hormone).
 
 ---
 
@@ -75,7 +76,11 @@ Since Kisspeptin-10 **stimulates the HPG axis**, complementary strategies focus 
 - **Antioxidants and mitochondrial support (CoQ10, NAD⁺ precursors):** Improve oocyte quality.
 
 **Rationale:** Kisspeptin-10 acts upstream in the HPG axis; stacking focuses on downstream support and optimizing reproductive hormone signaling without duplicating Kisspeptin’s direct action.
-**Studied in Humans?** Yes
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

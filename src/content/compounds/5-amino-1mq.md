@@ -81,9 +81,12 @@ Since 5-Amino-1MQ works by **preserving NAD⁺** and **enhancing metabolism**, s
 - 5-Amino-1MQ + **NAD⁺ precursor** (NMN/NR) + **sirtuin activator** (resveratrol)
 - Optional add-on: **MOTS-c** (mitochondrial peptide) for synergistic endurance and metabolic health.
 
-**Studied in Humans?** No
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
- 
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
+
 [**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7533692205836406047)

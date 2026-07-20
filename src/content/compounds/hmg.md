@@ -53,7 +53,11 @@ tags: []
 🔹 **Stacking Strategy (Educational / Complementary):**
 **Men:** HCG to maintain testosterone, antioxidants (CoQ10, NAC, Vitamins C/E) for sperm quality.
 **Women:** HCG as ovulation trigger, optional FSH analogues, antioxidants for oocyte quality.
-**Studied in Humans?** Yes
-**FDA Approved?** Yes
-**Allowed for 503a Compounding Pharmacy?** Yes
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

@@ -1,6 +1,6 @@
 ---
 title: "What are COAs?"
-group: "Gray Market 101"
+group: "Seminary 101"
 date: "2025-09-17 21:58:49"
 tags: []
 ---

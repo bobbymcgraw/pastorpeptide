@@ -19,6 +19,13 @@ tags: []
 - Chronic weight management, marketed separately for this indication.
 - Cardiovascular risk reduction in patients with Type 2 diabetes.
 
+**Background — why GLP-1 analogues exist in the first place:**
+
+- Native GLP-1 is a 30-amino-acid peptide hormone derived from the proglucagon gene, produced by intestinal enteroendocrine L-cells and by neurons in the brainstem (nucleus of the solitary tract) in response to food intake.
+- The initial GLP-1(1-37) product is amidated and proteolytically cleaved into two equipotent active forms, GLP-1(7-36)amide and GLP-1(7-37).
+- Endogenous GLP-1 is degraded almost immediately by the enzyme **DPP-4 (dipeptidyl peptidase-4)**, which is the entire reason long-acting synthetic analogues like liraglutide were engineered — to resist that rapid breakdown and remain active far longer than the native hormone.
+- Notably, GLP-1's insulinotropic action (unlike the related incretin hormone GIP) remains preserved in Type 2 diabetics, which is part of why GLP-1-based drugs became the dominant pharmaceutical focus in this space.
+
 ---
 
 🔹 **Oral Dosage:** Not available for liraglutide; unlike oral semaglutide (Rybelsus), liraglutide is only formulated for subcutaneous injection.
@@ -73,7 +80,11 @@ Since liraglutide's core mechanisms are appetite suppression and glucose regulat
 - **Lipo-B, Lipo-C:** Lipotropic support for liver function and fat metabolism alongside GLP-1-driven weight loss.
 
 **Rationale:** Liraglutide's appetite and glucose effects benefit from support that protects muscle mass and liver function during the caloric deficit it tends to produce.
-**Studied in Humans?** Yes, extensively — one of the most well-studied GLP-1 agonists in clinical use.
-**FDA Approved?** Yes — as Victoza for Type 2 diabetes and Saxenda for chronic weight management, among the original FDA-approved GLP-1 drugs.
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes, extensively — one of the most well-studied GLP-1 agonists in clinical use.</p>
+<p><strong>FDA Approved?</strong> Yes — as Victoza for Type 2 diabetes and Saxenda for chronic weight management, among the original FDA-approved GLP-1 drugs.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

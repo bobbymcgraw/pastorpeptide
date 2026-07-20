@@ -1,6 +1,6 @@
 ---
 title: "Group Testing"
-group: "Gray Market 101"
+group: "Seminary 101"
 date: "2025-09-30 00:32:34"
 tags: []
 ---

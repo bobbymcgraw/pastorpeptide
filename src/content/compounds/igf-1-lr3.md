@@ -76,7 +76,11 @@ Since IGF-1 LR3 **directly stimulates anabolic and regenerative pathways**, comp
 - **Adequate sleep and recovery protocols:** Maximize anabolic environment.
 
 **Rationale:** IGF-1 LR3 maximizes tissue repair and anabolic signaling; stacking focuses on **supportive peptides, GH secretagogues, and nutrients** to enhance efficacy and safety.
-**Studied in Humans?** No
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

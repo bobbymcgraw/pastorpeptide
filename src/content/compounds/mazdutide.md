@@ -94,3 +94,11 @@ Since Mazdutide is a **dual GLP-1 and glucagon receptor agonist**, complementary
 **Rationale:**
 
 - Combining Mazdutide with these strategies can **optimize weight loss**, improve **glycemic control**, and **enhance overall metabolic health**.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes (ongoing clinical trials, primarily in China)</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

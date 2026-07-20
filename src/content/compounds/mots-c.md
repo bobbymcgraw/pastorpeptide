@@ -6,10 +6,11 @@ tags: []
 ---
 ### 🔹 **What is MOTS-C ?**
 
-**Class:** Mitochondrial-derived peptide (16-amino acid peptide encoded by mitochondrial DNA).
+**Class:** Mitochondrial-derived peptide — a 16-amino acid peptide (sequence Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Leu-Phe-Tyr-Pro-Arg-Lys-Leu-Arg, MW 2288.6 g/mol) encoded directly by the **mitochondrial genome** rather than nuclear DNA, which is unusual and part of what makes it mechanistically distinct from most peptides. **Skeletal muscle is its primary target organ.**
 **Mechanism:**
 
 - Acts as a **mitochondrial signaling peptide** that regulates metabolism and stress responses.
+- Can be considered an **"exercise mimetic"** — it activates AMPK, increases **GLUT4 glucose transporter** uptake in muscle, and improves insulin sensitivity/decreases insulin resistance, which is why animal studies show improved glucose metabolism even on a high-fat diet.
 - Enhances **AMPK activation** → improves glucose uptake, fatty acid oxidation, and insulin sensitivity.
 - Supports **mitochondrial biogenesis** and protects against metabolic dysfunction.
 - Influences **exercise capacity, endurance, and recovery** by optimizing cellular energy utilization.
@@ -94,9 +95,12 @@ Since MOTS-c is a **mitochondrial optimizer and metabolic regulator**, stacking 
 - Possible mild side effects: injection site irritation, fatigue, or mild headaches.
 - Human clinical research is still early—long-term safety not fully established.
 
-**Studied in Humans?** No “MOTS-C” has human observational data (e.g., levels change with exercise) but no published trials administering MOTS-C to people; hence “NO” here.
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
- 
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No “MOTS-C” has human observational data (e.g., levels change with exercise) but no published trials administering MOTS-C to people; hence “NO” here.</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
+
 **Dr. Bhatti**

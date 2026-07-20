@@ -1,6 +1,6 @@
 ---
 title: "Batch Numbers"
-group: "Gray Market 101"
+group: "Seminary 101"
 date: "2025-09-17 21:57:55"
 tags: []
 ---

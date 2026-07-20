@@ -77,7 +77,11 @@ Since IGF-1 sits downstream of the GH axis, complementary stacks tend to focus o
 - Attention to glucose regulation is warranted given IGF-1's insulin-like signaling, particularly when stacked with other metabolic compounds.
 
 **Rationale:** IGF-1 amplifies the anabolic output of the GH axis; stacking aims to support that same axis and its downstream repair demands without stacking multiple strong insulin-mimetic agents simultaneously.
-**Studied in Humans?** Yes
-**FDA Approved?** Yes — as mecasermin (Increlex), approved for severe primary IGF-1 deficiency in a clinical pediatric context, distinct from general research/performance use.
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes — as mecasermin (Increlex), approved for severe primary IGF-1 deficiency in a clinical pediatric context, distinct from general research/performance use.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

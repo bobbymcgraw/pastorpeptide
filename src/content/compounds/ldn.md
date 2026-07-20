@@ -60,7 +60,11 @@ Since LDN's role is largely immune modulation and endorphin support rather than 
 - **BPC-157:** Often discussed alongside LDN in chronic pain and inflammatory-condition protocols, though the two work through distinct mechanisms.
 
 **Rationale:** LDN doesn't compete with peptide-based immune or recovery compounds — it works through a distinct opioid-receptor mechanism, which is part of why it's frequently considered as a complementary layer rather than a replacement for other immune-support strategies.
-**Studied in Humans?** Yes, though the low-dose, off-label use covered here is supported mostly by smaller trials and observational/practice-based evidence rather than the large-scale trials behind naltrexone's approved indication.
-**FDA Approved?** Naltrexone itself is FDA-approved — but only at the 50 mg dose for opioid and alcohol dependence. The low-dose use described in this entry is **off-label**; there is no FDA-approved low-dose naltrexone product.
-**Allowed for 503a Compounding Pharmacy?** Yes — LDN is one of the most commonly compounded off-label preparations, since no commercial product exists at the low strengths this use requires.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes, though the low-dose, off-label use covered here is supported mostly by smaller trials and observational/practice-based evidence rather than the large-scale trials behind naltrexone's approved indication.</p>
+<p><strong>FDA Approved?</strong> Naltrexone itself is FDA-approved — but only at the 50 mg dose for opioid and alcohol dependence. The low-dose use described in this entry is <strong>off-label</strong>; there is no FDA-approved low-dose naltrexone product.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes — LDN is one of the most commonly compounded off-label preparations, since no commercial product exists at the low strengths this use requires.</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

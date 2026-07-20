@@ -25,6 +25,13 @@ tags: []
 
 ---
 
+🔹 **Sublingual Troche Dosage**
+**Range:** Ipamorelin 500 mcg troche.
+**Typical protocol:** Dissolve 1 troche daily under the tongue.
+**Notes:** An alternative route to daily subcutaneous injection offered by some compounding pharmacies.
+
+---
+
 🔹 **Injectable / Subcutaneous Dosage (most common)**
 **Range:**
 
@@ -77,7 +84,11 @@ Since Ipamorelin is a **GH secretagogue**, complementary stacks focus on **enhan
 - **Adequate sleep, nutrition, and resistance training** enhance GH effectiveness.
 
 **Rationale:** Ipamorelin promotes controlled GH pulses; stacking aims to **maximize regenerative, metabolic, and recovery outcomes** without duplicating GH secretagogue effects unnecessarily.
-**Studied in Humans?** Yes
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

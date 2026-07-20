@@ -83,7 +83,11 @@ Since calcitonin's primary role is bone metabolism and calcium regulation, compl
 - **BPC-157, TB-500:** Complementary tissue repair support in fracture recovery contexts, working through different mechanisms than calcitonin's calcium/osteoclast pathway.
 
 **Rationale:** Calcitonin's mechanism is narrow and calcium-focused, so stacking logic centers on reinforcing skeletal structure and healing rather than amplifying its own pathway.
-**Studied in Humans?** Yes
-**FDA Approved?** Yes — salmon calcitonin is FDA-approved (Miacalcin, Fortical) for osteoporosis in postmenopausal women, Paget's disease, and hypercalcemia.
-**Allowed for 503a Compounding Pharmacy?** Yes — commonly compounded, particularly as a nasal spray formulation.
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes — salmon calcitonin is FDA-approved (Miacalcin, Fortical) for osteoporosis in postmenopausal women, Paget's disease, and hypercalcemia.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> Yes — commonly compounded, particularly as a nasal spray formulation.</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

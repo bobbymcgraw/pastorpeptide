@@ -65,7 +65,11 @@ Since Vladonix works through **T-cell stimulation and cytokine modulation**, com
 - General tissue-repair-oriented bioregulators can complement Vladonix during post-illness recovery windows.
 
 **Rationale:** Vladonix's mechanism is immune modulation via thymic signaling, so stacking logic favors reinforcing immune resilience during a defined window rather than layering unrelated organ-specific bioregulators on top.
-**Studied in Humans?** Limited (primarily Russian/Eastern European research, minimal Western clinical trials)
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Limited (primarily Russian/Eastern European research, minimal Western clinical trials)</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

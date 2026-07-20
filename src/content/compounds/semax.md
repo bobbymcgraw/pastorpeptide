@@ -21,6 +21,7 @@ Primary focus:
 - **Neuroprotection** in ischemic, oxidative, or stress-related injury.
 - **Mood stabilization and stress resilience**.
 - Potential **anti-aging brain support** and recovery from cognitive fatigue.
+- Additional research applications noted in the literature: reduced tumor size in an experimental breast cancer model, used as an anti-ulcer treatment (accelerates gastric ulcer healing and improves blood/lymphatic supply to gastric mucosa), promotes neuron survival during hypoxia and glutamate neurotoxicity, and influences vascular-system gene expression relevant to brain ischemia recovery.
 
 ---
 
@@ -40,8 +41,11 @@ Range:
 Typical research protocol:
 
 - **500 µg intranasal**, 2–3x/day for 2–4 weeks.
+- Broader dosing reference: **750–1,000 mcg intranasally**, or **100–300 mcg SubQ daily**. Doses above this range risk receptor desensitization.
 
-Rationale: Direct nose-to-brain delivery maximizes CNS penetration and onset of cognitive effects.
+Rationale: Direct nose-to-brain delivery maximizes CNS penetration and onset of cognitive effects. Because Semax and Selank share the **Pro-Gly-Pro** sequence motif, the two are sometimes alternated with each other depending on individual response.
+
+Real-world compounded example: **Semax 7,500 mcg/ml (6 ml nasal spray bottle)** — dosed at **1–2 sprays intranasally daily or as needed**, for neurological function and anxiety support.
 
 ---
 
@@ -95,9 +99,12 @@ Rationale: Semax forms the **foundation for neuroplasticity and focus**, while s
 - Non-addictive and generally safe in preclinical and limited clinical studies.
 - Long-term human safety data is limited; most research is from Russia/Eastern Europe.
 
-**Studied in Humans?** Yes
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
- 
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
+
 [**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7535959026958470431)

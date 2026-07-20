@@ -72,7 +72,11 @@ ACTH sits upstream of the entire cortisol cascade, so any "stacking" conversatio
 - **BPC-157, TB-500:** Address localized tissue repair separately from the systemic anti-inflammatory action ACTH provides via cortisol.
 
 **Rationale:** Because ACTH's effects are mediated entirely through cortisol release, stacking logic here is about supporting the axis, not amplifying a secretagogue effect the way GH peptides are stacked.
-**Studied in Humans?** Yes
-**FDA Approved?** Yes — as H.P. Acthar Gel (repository corticotropin injection) for a range of autoimmune and inflammatory indications, and in synthetic form (cosyntropin/Cortrosyn) for diagnostic adrenal function testing.
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes — as H.P. Acthar Gel (repository corticotropin injection) for a range of autoimmune and inflammatory indications, and in synthetic form (cosyntropin/Cortrosyn) for diagnostic adrenal function testing.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

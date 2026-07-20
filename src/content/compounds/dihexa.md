@@ -6,14 +6,16 @@ tags: []
 ---
 ### 🔹 **What is Dihexa?**
 
-**Class:** Synthetic oligopeptide (nootropic / neurogenic peptide).
+**Class:** Synthetic oligopeptide (nootropic / neurogenic peptide); sequence Hexanoyl-Tyr-Ile-Ahx-NH2, MW 504.66.
 **Mechanism:**
 
-- Potent **HGF (hepatocyte growth factor) agonist** that promotes synaptogenesis, neurogenesis, and neuronal connectivity.
-- Enhances cognitive function by supporting dendritic branching and synaptic density.
+- Potent **HGF (hepatocyte growth factor) agonist** that promotes synaptogenesis, neurogenesis, and neuronal connectivity. Mechanistically, Dihexa increases HGF activity while lowering HGF dimerization, which may produce an active monomer complex that effectively doubles the signaling capacity of available HGF.
+- Also works through the **renin-angiotensin system (RAS)** — acting like angiotensin IV (AT4) and counteracting the negative memory effects produced by angiotensin II acting on the AT1 receptor.
+- Enhances cognitive function by supporting dendritic branching and synaptic density; increases cerebral blood flow, encourages synaptogenesis, augments spinogenesis, stimulates dendritic arborization, and contributes to calcium signaling.
 - Potentially improves memory formation, learning capacity, and neuroplasticity.
+- Relevant to neurodegenerative disease research: has been shown in research models to prevent development of Parkinson's-like symptoms and to restore motor function.
 
-**Primary focus:** Cognitive enhancement (memory, learning, focus), neuroplasticity, neurorepair, and neuroregeneration.
+**Primary focus:** Cognitive enhancement (memory, learning, focus), neuroplasticity, neurorepair, neuroregeneration, and neurodegenerative disease contexts such as Parkinson's.
 
 ---
 
@@ -74,3 +76,11 @@ Since Dihexa is a **neurogenic and cognitive-enhancing peptide**, complementary 
 - Anti-inflammatory nutrients (omega-3 fatty acids, antioxidants) to reduce neuroinflammation.
 
 **Rationale:** Dihexa promotes synaptogenesis and neuronal connectivity; stacking aims to **enhance neuroplasticity, mitochondrial function, and cognitive resilience** rather than duplicating the peptide’s direct effects.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> No (data is limited to rodent and in-vitro research; no published human trials)</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

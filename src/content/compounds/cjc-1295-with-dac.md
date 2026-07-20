@@ -19,6 +19,13 @@ tags: []
 
 ---
 
+🔹 **Sublingual Troche Dosage**
+**Range:** CJC-1295 500 mcg troche.
+**Typical protocol:** Dissolve 1 troche daily under the tongue nightly.
+**Notes:** An alternative delivery route to weekly subcutaneous injection.
+
+---
+
 🔹 **Injectable / Subcutaneous Dosage (most common)**
 **Range:** Commonly used at 1–2 mg per week subcutaneously in clinical and anecdotal settings. Some protocols start at 0.5 mg/week to assess tolerance.
 **Frequency:** Typically once weekly due to DAC’s extended half-life.
@@ -47,6 +54,11 @@ Pair with: Resistance training, adequate protein intake, sleep optimization, and
 
 ---
 
+🔹 **Common Combination Products**
+Some compounding pharmacies offer CJC-1295 pre-blended with Ipamorelin in a single vial or troche (e.g., 4mg/4mg or 5mg/9mg combination formulations), dosed together on a 5 days on/2 days off schedule. This is a practical, ready-made combination product some pharmacies provide, complementary to—not a replacement for—the individualized Stacking Strategy below.
+
+---
+
 🔹 **Stacking Strategy (Educational)**
 Since CJC-1295 with DAC targets GH/IGF-1 pathways, stacks focus on anabolic support, tissue repair, fat metabolism, and anti-aging:
 🔸 **Anabolic & Fat Loss Support**
@@ -64,7 +76,10 @@ Since CJC-1295 with DAC targets GH/IGF-1 pathways, stacks focus on anabolic supp
 - NAD⁺ precursors (NMN/NR): Support mitochondrial function and metabolic health.
 - Sleep and lifestyle optimization: Critical for GH-mediated regenerative benefits.
 
-**Studied in Humans?** Yes
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

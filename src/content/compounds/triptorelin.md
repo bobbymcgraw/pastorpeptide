@@ -70,7 +70,11 @@ Because triptorelin's entire mechanism is built around suppressing sex hormone p
 - Add-back hormone therapy is sometimes used clinically to offset suppression-related side effects, always under direct physician guidance.
 
 **Rationale:** Triptorelin's suppressive effect is the entire point of the therapy — complementary support exists to manage the consequences of that suppression (bone density, hormonal side effects), not to enhance the mechanism itself.
-**Studied in Humans?** Yes, extensively.
-**FDA Approved?** Yes — as Trelstar (prostate cancer) and Triptodur (central precocious puberty).
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes, extensively.</p>
+<p><strong>FDA Approved?</strong> Yes — as Trelstar (prostate cancer) and Triptodur (central precocious puberty).</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

@@ -4,7 +4,7 @@ group: "Reproductive, Sexual & Libido-Enhancing"
 date: "2025-09-19 22:27:57"
 tags: []
 ---
-### 🔹 **What is MT-1** Melanotan 1 (Afamelanotide) **?**
+### 🔹 **What is Melanotan 1 (MT-1)?**
 
 **Class:** Synthetic melanocortin peptide analog.
 **Mechanism:**
@@ -17,6 +17,12 @@ tags: []
 
 - Skin pigmentation and UV-independent tanning.
 - Potential support for **appetite regulation and libido enhancement**.
+
+**Molecular profile:** MW 1646.845 Daltons. Sequence: Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2.
+
+**Important distinction from MT-2:** MT-1 does **not** cross the blood-brain barrier. Because of this, it does not produce the central effects seen with Melanotan II (like increased libido/sexual desire)—its action is limited to melanogenesis/tanning, photoprotection, and immune support (upregulating regulatory T-cells and improving the TH1/TH17 ratio). Any libido or appetite claims for MT-1 should be read with that limitation in mind.
+
+**FDA-approved identity:** MT-1 is, in fact, the active ingredient in **afamelanotide**, marketed as **Scenesse**—an FDA-approved drug for preventing phototoxicity in erythropoietic protoporphyria (EPP), a rare blood disorder. The approved form is a subcutaneous implant delivering 16mg over roughly 2 months. This is a separate clinical/regulatory context from the research/tanning use described below.
 
 ---
 
@@ -53,6 +59,7 @@ tags: []
 ✅ **Educational Integration Example**
 
 - **Example protocol:** 0.5 mg subcutaneous injection 3x per week for 8 weeks.
+- **Tanning-specific detail:** ~200mcg SubQ daily during week 1, then adjust dose/frequency based on pigment response—individual duration to reach desired tan varies.
 - Pair with: Controlled sun exposure or UV-free tanning, adequate hydration, and skin care for optimal pigmentation results.
 
 ---
@@ -69,7 +76,11 @@ Since MT-1 **primarily targets melanocortin receptors for pigmentation**, comple
 - **GLP-1 agonists or L-Carnitine:** May complement melanocortin-mediated satiety or energy balance pathways.
 
 **Rationale:** MT-1 enhances pigmentation and potentially modulates satiety; stacking emphasizes **skin protection, repair, and metabolic support** without redundant melanocortin activation.
-**Studied in Humans?** Yes
-**FDA Approved?** Not exactly, only FDA-approved for erythropoietic protoporphyria.
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Yes</p>
+<p><strong>FDA Approved?</strong> Yes—as afamelanotide (Scenesse), specifically for erythropoietic protoporphyria (EPP). Research/tanning use is a separate, off-label context from the approved indication.</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>

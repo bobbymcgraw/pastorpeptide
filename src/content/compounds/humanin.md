@@ -75,7 +75,11 @@ Since Humanin's core value proposition is mitochondrial protection and cellular 
 - **Epitalon:** Cellular longevity peptide that pairs conceptually with Humanin's anti-aging focus.
 
 **Rationale:** Humanin protects the cell's energy infrastructure; stacking aims to reinforce mitochondrial resilience and reduce oxidative burden rather than duplicate its specific mechanism.
-**Studied in Humans?** Limited — much of the evidence base is preclinical or early-stage, with human data still emerging.
-**FDA Approved?** No
-**Allowed for 503a Compounding Pharmacy?** No
-**Disclaimer**: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.
+
+<div class="quick-facts">
+<p><strong>Studied in Humans?</strong> Limited — much of the evidence base is preclinical or early-stage, with human data still emerging.</p>
+<p><strong>FDA Approved?</strong> No</p>
+<p><strong>Allowed for 503a Compounding Pharmacy?</strong> No</p>
+</div>
+
+<p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
