@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const sections = [
+  {
+    group: 'Overseas Vendor Links',
+    note: 'Community-vetted overseas contacts. Discernment before you tithe your money to anyone.',
+    links: [
+      { name: 'GB Peptides (GYC)', href: 'https://ggpeps.com/' },
+      { name: 'Uther Telegram Group', href: 'https://t.me/+jihqNJYOESQ3NzEx' },
+      { name: 'QYC', href: 'https://discord.gg/N9w4VDY2zw' },
+      { name: 'BHD', href: 'https://t.me/+QFIcN6goDFEyYzg1' },
+      { name: 'BSF-Yoyo', href: 'https://t.me/+ySX2yYfUG2E1ZjQ9' },
+    ],
+  },
+  {
+    group: 'Supplies',
+    links: [
+      { name: "Ava's Research Supply", href: 'https://www.avasresearch.com/' },
+      { name: 'Cool Peps — 3D Printed Accessories', href: 'https://coolpeps.etsy.com/' },
+      { name: 'ADW Diabetes', href: 'https://www.adwdiabetes.com/' },
+      { name: 'All Things Peptides', href: 'https://allthingspeptides.com/' },
+      { name: 'Amsco Medical', href: 'https://www.amscomedical.com/' },
+      { name: 'Ceeps', href: 'https://www.jotform.com/251473777557168' },
+      { name: 'Diabetic Warehouse', href: 'https://www.diabeticwarehouse.org/' },
+      { name: 'Farris Labs', href: 'https://www.farrislabs.com/' },
+      { name: 'Goodies Supplies', href: 'https://goodlifesupplies.com/' },
+      { name: 'KS-Tek Lab Supplies', href: 'https://ks-tek.com/' },
+      { name: 'Med Lab Supply', href: 'https://www.medical-and-lab-supplies.com/' },
+      { name: "Mel's Wraps", href: 'https://www.jotform.com/form/250625543955159' },
+      { name: 'Medex Supply', href: 'https://medexsupply.com/' },
+      { name: "Mike's 3D Goods", href: 'https://www.etsy.com/shop/mikes3dgoods/?etsrc=sdt' },
+      { name: 'Molecular Mischief', href: 'https://molecularmischief.com/' },
+      { name: 'PenHerGize', href: 'https://form.jotform.com/251936166011149' },
+      { name: 'Peppy Pens', href: 'https://www.peppypens.com/' },
+      { name: 'Peptide Test', href: 'https://peptidetest.com/' },
+      { name: 'Phat Cat 3D Studio', href: 'https://www.etsy.com/shop/PhatCat3DStudio' },
+      { name: "R31N's Supplies (EU Customers)", href: 'https://form.jotform.com/250994715486370' },
+      { name: 'Roadblock Storage', href: 'https://www.shoproadblock.com/shop' },
+      { name: "Starlet's 3D Creations", href: 'https://form.jotform.com/251440988245160' },
+      { name: 'Syringes Needle Depot', href: 'https://syringesneedlesdepot.com/' },
+      { name: 'Total Diabetes Supply', href: 'https://www.totaldiabetessupply.com/' },
+      { name: 'Underground Supply', href: 'https://www.undergroundsupply.shop/' },
+      { name: 'Vitality Medical', href: 'https://www.vitalitymedical.com/' },
+      { name: 'West End Medical Supply', href: 'https://westendmedicalsupply.com/' },
+    ],
+  },
+  {
+    group: 'Pens',
+    links: [
+      { name: 'Toads Pens', href: 'https://toadspens.com/' },
+      { name: 'Peppy Pens', href: 'https://www.peppypens.com/' },
+      { name: 'All Things Peptides', href: 'https://allthingspeptides.com/' },
+      { name: 'Goodies Supplies', href: 'https://goodlifesupplies.com/' },
+      { name: "Starlet's Supplies", href: 'https://form.jotform.com/251440988245160' },
+    ],
+  },
+  {
+    group: 'US Vendors',
+    links: [
+      { name: 'Sunrise Bioresearch', href: 'https://sunrisebioresearch.com/' },
+      { name: 'Glacier Aminos', href: 'https://glacieraminos.shop/' },
+      { name: 'Crush Research', href: 'https://crushresearch.shop/' },
+      { name: 'Nexaph', href: 'https://nexaph.com/' },
+      { name: 'Welli Labs', href: 'https://wellilabs.com/' },
+      { name: 'EZPeptides', href: 'https://ezpeptides.com/' },
+    ],
+  },
+  {
+    group: 'US Resellers',
+    links: [
+      { name: "Raven's Nest", href: 'https://ravensclass.com/' },
+      { name: "Sam's Supplies", href: 'https://sams-supplies.net/' },
+      { name: 'Joyous', href: 'https://joyousbuys.my.canva.site/' },
+    ],
+  },
+  {
+    group: 'Hospira Suppliers',
+    note: 'Bacteriostatic water and sterile solutions.',
+    links: [
+      { name: 'Medex Supply — Hospira', href: 'https://medexsupply.com/water-bacteriostatic-iv-inj-sol-mdv-30ml-sterile-ftv-25-pack/' },
+      { name: 'Peptide Test — Hospira', href: 'https://peptidetest.com/products/pfizer-hospira-bacteriostatic-water-30ml-vial' },
+      { name: 'Bacteriostatic Water', href: 'https://www.bacteriostaticwater.com/' },
+      { name: 'Beyond Health', href: 'https://bacteriostaticwatercanada.com/' },
+      { name: 'Molecular Mischief', href: 'https://molecularmischief.com/' },
+      { name: 'Underground Supply', href: 'https://www.undergroundsupply.shop/' },
+      { name: 'Syringes Needle Depot', href: 'https://syringesneedlesdepot.com/' },
+      { name: 'West End Medical Supply', href: 'https://westendmedicalsupply.com/collections/sterile-solutions' },
+    ],
+  },
+  {
+    group: 'Amazon Links',
+    note: 'Freezers, pen needles, and syringes.',
+    links: [
+      { name: 'Low Temperature Freezer — Red', href: 'https://amzn.to/48aO8VP' },
+      { name: 'Low Temperature Freezer — Black', href: 'https://amzn.to/46DwRly' },
+      { name: 'Pen Needles 32G x 6mm', href: 'https://amzn.to/4nSHBna' },
+      { name: 'Gluco-Care Plus Pen Tips 32G x 6mm', href: 'https://amzn.to/46r6XTf' },
+      { name: 'Easy Touch 31G 5/16-Inch Syringe', href: 'https://amzn.to/48FlSuv' },
+      { name: '20 Pack 3ml/cc Luer Lock Syringe with Caps', href: 'https://amzn.to/46q7NQb' },
+      { name: '100 Pack 27 Ga 1/2 inch Disposable Needles', href: 'https://amzn.to/485jdtP' },
+    ],
+  },
+  {
+    group: 'Testing Groups',
+    links: [
+      { name: 'Nexaph 3rd Party Testing Group', href: 'https://t.me/+lCIrWsOVAiI4NWY5' },
+      { name: 'Flying Purple Guild', href: 'https://t.me/+wLpJL2bMgkNhMTJh' },
+      { name: 'STG Testing Server', href: 'https://discord.gg/dpPHCqrjFx' },
+    ],
+  },
+  {
+    group: 'External Sites',
+    links: [
+      { name: 'Stairway To Gray', href: 'https://www.stairwaytogray.com/' },
+      { name: 'K-Hole', href: 'https://peptide.chat/invite/YPEb27jM' },
+      { name: 'Nexaph Telegram Group', href: 'https://t.me/SNPcomm' },
+    ],
+  },
+];
+---
+<Layout title="Links">
+  <div class="wrap header">
+    <a class="back" href="/seminary">&larr; The Seminary</a>
+    <span class="chapter-label">The Church Directory</span>
+    <h1>Links</h1>
+    <p class="lede">Every vendor, supply shop, and community link the congregation has passed around &mdash; kept current, promo codes stripped out. Nothing here is an endorsement; do your own homework before you spend a dollar.</p>
+  </div>
+
+  <div class="wrap groups">
+    {sections.map(({ group, note, links }) => (
+      <section class="group">
+        <h2>{group}</h2>
+        {note && <p class="group-note">{note}</p>}
+        <ul class="link-list">
+          {links.map((l) => (
+            <li>
+              <a href={l.href} target="_blank" rel="noopener noreferrer nofollow">{l.name}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .header { padding: 40px 20px 24px; }
+  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
+  h1 { margin: 6px 0 6px; }
+  .lede { color: var(--text-muted); max-width: 640px; }
+  .groups { padding: 0 20px 60px; }
+  .group { margin-top: 40px; }
+  .group h2 {
+    margin-top: 0;
+    font-size: 1.15rem;
+    color: var(--navy);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+  }
+  .group-note {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin: 8px 0 14px;
+  }
+  .link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 6px 20px;
+  }
+  .link-list li {
+    border-bottom: 1px solid var(--border);
+  }
+  .link-list a {
+    display: block;
+    padding: 8px 0;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .link-list a:hover {
+    color: var(--amber-red);
+    text-decoration: underline;
+  }
+</style>
