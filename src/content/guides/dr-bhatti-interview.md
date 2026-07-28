@@ -4,7 +4,7 @@ group: "Videos & Interviews"
 date: "2025-09-28 12:38:15"
 tags: []
 ---
-[Watch: https://www.youtube.com/watch?v=sIflfUZKqN4](https://www.youtube.com/watch?v=sIflfUZKqN4)
+*Note: the original video has since been taken down.*
 
 ### Summary
 

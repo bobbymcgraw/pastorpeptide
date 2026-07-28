@@ -79,5 +79,3 @@ Rationale: Topical combination enhances wrinkle reduction, skin firmness, and ov
 </div>
 
 <p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
-
-[**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7531161247799086366)

@@ -100,5 +100,3 @@ Since NAD⁺ is a **master metabolic regulator**, stacking focuses on amplifying
 </div>
 
 <p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
-
-[**Dr. Bhatti**](https://www.tiktok.com/@sim.bhatti.md/video/7536167410185915678)

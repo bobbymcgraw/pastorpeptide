@@ -102,5 +102,3 @@ Since **Thymosin Alpha-1 enhances immune surveillance and balances inflammation*
 </div>
 
 <p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
-
-[**Dr. Bhatti Video**](https://www.tiktok.com/@sim.bhatti.md/video/7537842752260705567 "https://www.tiktok.com/@sim.bhatti.md/video/7537842752260705567")
