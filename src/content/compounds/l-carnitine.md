@@ -87,5 +87,3 @@ Since L-Carnitine **supports mitochondrial fatty acid oxidation**, complementary
 </div>
 
 <p class="disclaimer-text"><strong>Disclaimer</strong>: Do not rely on any dosing information provided, this is for educational and research only. Always double and triple check alternative references for education. Please consult with healthcare provider for your specific dosing and protocol if applicable.</p>
-
-**Dr. Bhatti**
