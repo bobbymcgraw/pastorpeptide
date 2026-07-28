@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const goals = [
+  {
+    id: 'weight-loss',
+    label: 'Weight Loss',
+    icon: '⚖️',
+    blurb: "The peptides most people research first when the goal is fat loss.",
+    picks: [
+      { slug: 'semaglutide', name: 'Semaglutide', why: 'The most established GLP-1 for appetite suppression and steady fat loss.' },
+      { slug: 'tirzepatide', name: 'Tirzepatide', why: 'Dual GLP-1/GIP action — stronger average results than semaglutide alone in trials.' },
+      { slug: 'retatrutide-deep-dive', name: 'Retatrutide', why: 'Triple agonist showing the deepest fat-loss numbers of the GLP-1 family so far.' },
+      { slug: 'aod-9604', name: 'AOD-9604', why: 'A fat-targeting GH fragment for people looking for a non-GLP-1 route.' },
+    ],
+  },
+  {
+    id: 'muscle',
+    label: 'Muscle Growth & Recovery',
+    icon: '💪',
+    blurb: "Growth-hormone-axis peptides used to support lean mass and training recovery.",
+    picks: [
+      { slug: 'cjc-1295-no-dac', name: 'CJC-1295 (No DAC)', why: 'Classic GHRH analogue, usually stacked with a GHRP like Ipamorelin.' },
+      { slug: 'ipamorelin', name: 'Ipamorelin', why: 'A clean GH secretagogue with minimal effect on cortisol or hunger.' },
+      { slug: 'mk-677', name: 'MK-677 (Ibutamoren)', why: 'An oral option for raising GH and IGF-1 without injections.' },
+      { slug: 'tesamorelin', name: 'Tesamorelin', why: 'A GHRH analogue studied specifically for lean mass and visceral fat.' },
+    ],
+  },
+  {
+    id: 'healing',
+    label: 'Injury Healing & Recovery',
+    icon: '🩹',
+    blurb: "The go-to peptides for tendons, joints, gut lining, and general tissue repair.",
+    picks: [
+      { slug: 'bpc-157', name: 'BPC-157', why: 'The most widely discussed healing peptide — gut, tendon, and soft-tissue repair.' },
+      { slug: 'tb500', name: 'TB-500 (Thymosin Beta-4)', why: 'Often stacked with BPC-157 for broader tissue and inflammation support.' },
+      { slug: 'ghk-cu', name: 'GHK-Cu', why: 'Copper peptide studied for tissue remodeling and wound healing.' },
+      { slug: 'kpv', name: 'KPV', why: 'An anti-inflammatory peptide fragment of alpha-MSH.' },
+    ],
+  },
+  {
+    id: 'sleep',
+    label: 'Better Sleep',
+    icon: '🌙',
+    blurb: "A short list — sleep is one of the smaller categories in the encyclopedia.",
+    picks: [
+      { slug: 'dsip', name: 'DSIP (Delta Sleep-Inducing Peptide)', why: 'The peptide most specifically associated with sleep onset and quality.' },
+      { slug: 'selank', name: 'Selank', why: 'An anxiolytic peptide some use to wind down before bed.' },
+      { slug: 'epitalon', name: 'Epitalon', why: 'Studied for pineal gland and circadian rhythm support.' },
+    ],
+  },
+  {
+    id: 'focus',
+    label: 'Focus & Cognitive Performance',
+    icon: '🧠',
+    blurb: "Nootropic peptides people research for mental clarity and drive.",
+    picks: [
+      { slug: 'semax', name: 'Semax', why: 'A well-studied Russian nootropic peptide for focus and mental stamina.' },
+      { slug: 'selank', name: 'Selank', why: 'Anxiolytic and cognitive support in one peptide.' },
+      { slug: 'dihexa', name: 'Dihexa', why: 'One of the more potent nootropics in the encyclopedia, studied for neurogenesis.' },
+      { slug: 'cerebrolysin', name: 'Cerebrolysin', why: 'A neurotrophic peptide mix used for cognitive support and recovery.' },
+    ],
+  },
+  {
+    id: 'anti-aging',
+    label: 'Anti-Aging & Longevity',
+    icon: '⏳',
+    blurb: "Cellular-health peptides for the long game, not a quick before/after.",
+    picks: [
+      { slug: 'epitalon', name: 'Epitalon', why: 'A longevity classic, studied for telomerase activity.' },
+      { slug: 'nad', name: 'NAD+', why: 'Supports cellular energy production, which declines with age.' },
+      { slug: 'mots-c', name: 'MOTS-c', why: 'A mitochondrial-derived peptide tied to metabolic and longevity research.' },
+      { slug: 'ghk-cu', name: 'GHK-Cu', why: 'Beyond healing, it is one of the most-studied peptides for skin and collagen aging.' },
+    ],
+  },
+  {
+    id: 'immune',
+    label: 'Immune Support',
+    icon: '🛡️',
+    blurb: "Peptides studied for immune modulation, not a substitute for a doctor when you're actually sick.",
+    picks: [
+      { slug: 'thymosin-alpha-1', name: 'Thymosin Alpha-1', why: 'The classic immune-modulating peptide, well studied across immune conditions.' },
+      { slug: 'ldn', name: 'Low Dose Naltrexone (LDN)', why: 'A repurposed prescription drug widely used off-label for immune modulation.' },
+      { slug: 'thymalin', name: 'Thymalin', why: 'A thymus bioregulator from the Khavinson peptide bioregulator family.' },
+    ],
+  },
+  {
+    id: 'libido',
+    label: 'Libido & Sexual Health',
+    icon: '❤️',
+    blurb: "Peptides studied specifically for arousal and sexual function.",
+    picks: [
+      { slug: 'pt-141-bremelanotide', name: 'PT-141 (Bremelanotide)', why: 'The best-known peptide for libido, in an FDA-approved drug for low sexual desire.' },
+      { slug: 'kisspeptin-10', name: 'Kisspeptin-10', why: 'Works upstream on the hormonal axis that drives libido and fertility.' },
+      { slug: 'oxytocin', name: 'Oxytocin', why: 'The "bonding hormone," also studied for arousal and connection.' },
+    ],
+  },
+  {
+    id: 'skin-hair',
+    label: 'Skin, Hair & Nails',
+    icon: '✨',
+    blurb: "Beauty-focused peptides, mostly topical or low-dose.",
+    picks: [
+      { slug: 'ghk-cu-for-beauty', name: 'GHK-Cu for Beauty', why: 'The beauty-dosed protocol for GHK-Cu, aimed at skin and collagen.' },
+      { slug: 'ahk-cu', name: 'AHK-Cu (Copper Tripeptide-3)', why: 'A copper peptide studied specifically for hair growth.' },
+      { slug: 'snap-8', name: 'SNAP-8', why: 'A topical peptide used for fine lines, without the needle.' },
+      { slug: 'zinc-thymulin', name: 'Zinc Thymulin', why: 'A bioregulator-style peptide researched for hair.' },
+    ],
+  },
+];
+---
+<Layout title="Find Your Starting Point">
+  <div class="wrap header">
+    <a class="back" href="/seminary">&larr; The Seminary</a>
+    <span class="chapter-label">The Consultation</span>
+    <h1>Find Your Starting Point</h1>
+    <p class="lede">Tell me what you're actually trying to do, and I'll point you to the compounds most people start with &mdash; straight to the encyclopedia page for each one. This isn't a prescription. It's a place to start reading.</p>
+  </div>
+
+  <div class="wrap quiz">
+    <div id="goal-picker" class="goal-grid">
+      {goals.map((g) => (
+        <button class="goal-btn" data-goal={g.id}>
+          <span class="goal-icon">{g.icon}</span>
+          <span>{g.label}</span>
+        </button>
+      ))}
+    </div>
+
+    {goals.map((g) => (
+      <div class="results" id={`results-${g.id}`} hidden>
+        <button class="reset">&larr; Pick a different goal</button>
+        <h2>{g.icon} {g.label}</h2>
+        <p class="results-blurb">{g.blurb}</p>
+        <div class="grid grid-cards">
+          {g.picks.map((p) => (
+            <a class="card" href={`/compounds/${p.slug}`}>
+              <h3>{p.name}</h3>
+              <p class="why">{p.why}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .header { padding: 40px 20px 24px; }
+  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
+  h1 { margin: 6px 0 6px; }
+  .lede { color: var(--text-muted); max-width: 640px; }
+  .quiz { padding: 0 20px 60px; }
+
+  .goal-grid[hidden] { display: none; }
+  .goal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+  }
+  .goal-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 16px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .goal-btn:hover {
+    border-color: var(--amber-red);
+    transform: translateY(-2px);
+  }
+  .goal-icon { font-size: 1.8rem; }
+
+  .results { margin-top: 10px; }
+  .reset {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .reset:hover { color: var(--amber-red); }
+  .results h2 { margin: 0 0 6px; }
+  .results-blurb { color: var(--text-muted); max-width: 600px; margin-bottom: 24px; }
+  .why {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin: 6px 0 0;
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.goal-btn');
+  const picker = document.getElementById('goal-picker');
+  const allResults = document.querySelectorAll<HTMLElement>('.results');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const goal = btn.dataset.goal;
+      picker?.setAttribute('hidden', '');
+      allResults.forEach((r) => {
+        r.hidden = r.id !== `results-${goal}`;
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('.reset').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      allResults.forEach((r) => r.setAttribute('hidden', ''));
+      picker?.removeAttribute('hidden');
+    });
+  });
+</script>
