@@ -10,6 +10,34 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <div class="wrap calc">
+    <div class="primer">
+      <h2>Four Words to Know</h2>
+      <p class="primer-sub">Everything below is just these four ideas, combined.</p>
+      <div class="primer-grid">
+        <div class="primer-term">
+          <span class="primer-icon">💊</span>
+          <h3>mg</h3>
+          <p>Milligrams. How much actual peptide powder is sitting in the vial — the amount of "stuff."</p>
+        </div>
+        <div class="primer-term">
+          <span class="primer-icon">💧</span>
+          <h3>mL</h3>
+          <p>Milliliters. How much liquid — the bacteriostatic water — you add to that powder.</p>
+        </div>
+        <div class="primer-term">
+          <span class="primer-icon">⚗️</span>
+          <h3>Concentration</h3>
+          <p>How strong the resulting mix is: how much medicine ends up in each drop of water.</p>
+        </div>
+        <div class="primer-term">
+          <span class="primer-icon">📏</span>
+          <h3>Units</h3>
+          <p>The small markings on a U-100 insulin syringe. 100 units = 1 mL, always.</p>
+        </div>
+      </div>
+      <p class="primer-secret">The whole secret: when you mix powder into water, the medicine doesn't disappear — it just spreads out. Same amount of "stuff," more or less room to move in. That's the entire subject.</p>
+    </div>
+
     <div class="calc-card">
       <div class="field">
         <label for="vialMg">Vial strength (mg)</label>
@@ -77,6 +105,38 @@ import Layout from '../layouts/Layout.astro';
   h1 { margin: 6px 0 6px; }
   .lede { color: var(--text-muted); max-width: 640px; }
   .calc { padding: 0 20px 60px; max-width: 640px; }
+
+  .primer { margin-bottom: 36px; }
+  .primer h2 { margin: 0 0 4px; font-size: 1.4rem; }
+  .primer-sub { color: var(--text-muted); margin: 0 0 20px; }
+  .primer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .primer-term {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .primer-icon { font-size: 1.3rem; }
+  .primer-term h3 {
+    margin: 6px 0 4px;
+    font-size: 1.05rem;
+    color: var(--navy);
+  }
+  .primer-term p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  .primer-secret {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text);
+  }
 
   .calc-card {
     background: var(--cream);
@@ -205,6 +265,7 @@ import Layout from '../layouts/Layout.astro';
 
   @media (max-width: 480px) {
     .results { grid-template-columns: repeat(2, 1fr); }
+    .primer-grid { grid-template-columns: 1fr; }
   }
 </style>
 
