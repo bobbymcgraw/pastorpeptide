@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Reconstitution Calculator">
+  <div class="wrap header">
+    <a class="back" href="/seminary">&larr; The Seminary</a>
+    <span class="chapter-label">The Sacred Math</span>
+    <h1>Reconstitution Calculator</h1>
+    <p class="lede">Four numbers, one relationship. Enter your vial size and how much water you're adding, and this works out the concentration, the draw volume, and the units on a U-100 syringe for any dose you want.</p>
+  </div>
+
+  <div class="wrap calc">
+    <div class="calc-card">
+      <div class="field">
+        <label for="vialMg">Vial strength (mg)</label>
+        <input type="number" id="vialMg" value="5" min="0.1" step="0.1" />
+      </div>
+
+      <div class="field">
+        <label for="waterMl">Bacteriostatic water to add (mL)</label>
+        <input type="range" id="waterMl" value="2" min="0.5" max="5" step="0.1" />
+        <div class="range-labels">
+          <span>Less water (more concentrated)</span>
+          <span id="waterMlValue">2.0 mL</span>
+          <span>More water (less concentrated)</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="doseMg">Dose you want (mg)</label>
+        <input type="number" id="doseMg" value="0.25" min="0.001" step="0.001" />
+      </div>
+
+      <div class="results">
+        <div class="result">
+          <span class="result-label">Concentration</span>
+          <span class="result-value" id="outConcentration">2.50 mg/mL</span>
+        </div>
+        <div class="result result-primary">
+          <span class="result-label">Draw this much</span>
+          <span class="result-value" id="outVolume">0.10 mL</span>
+        </div>
+        <div class="result">
+          <span class="result-label">On a U-100 syringe</span>
+          <span class="result-value" id="outUnits">10 units</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>The one rule that matters:</strong> adding more water never changes the total dose in the vial — it only changes how much liquid you have to draw to get a given amount. More water = more diluted = more units per dose. Less water = more concentrated = fewer units per dose. Same medicine, different volume.
+    </div>
+
+    <p class="disclaimer-text"><strong>Disclaimer</strong>: This tool is for educational math only — it does not tell you what dose to take or confirm your specific peptide's stability at a given dilution. Always double and triple check your own numbers, and consult a healthcare provider for your specific dosing and protocol. See <a href="/guides/reconstitution-solutions">Reconstitution Solutions</a> and <a href="/guides/reconstituting-a-vial">Reconstituting a Vial</a> for the full walkthrough, or <a href="/compounds">the encyclopedia</a> for dosing ranges by compound.</p>
+  </div>
+</Layout>
+
+<style>
+  .header { padding: 40px 20px 24px; }
+  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
+  h1 { margin: 6px 0 6px; }
+  .lede { color: var(--text-muted); max-width: 640px; }
+  .calc { padding: 0 20px 60px; max-width: 640px; }
+
+  .calc-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .field { margin-bottom: 24px; }
+  .field:last-of-type { margin-bottom: 0; }
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+  }
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--amber-red);
+  }
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    gap: 8px;
+  }
+  #waterMlValue {
+    font-weight: 700;
+    color: var(--amber-red);
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .result {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  .result-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .result-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--navy);
+  }
+  .result-primary .result-value { color: var(--amber-red); }
+
+  .callout {
+    margin-top: 24px;
+    background: var(--cream-dark, var(--cream));
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+  .disclaimer-text {
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  @media (max-width: 480px) {
+    .results { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const vialMg = document.getElementById('vialMg') as HTMLInputElement;
+  const waterMl = document.getElementById('waterMl') as HTMLInputElement;
+  const doseMg = document.getElementById('doseMg') as HTMLInputElement;
+  const waterMlValue = document.getElementById('waterMlValue')!;
+  const outConcentration = document.getElementById('outConcentration')!;
+  const outVolume = document.getElementById('outVolume')!;
+  const outUnits = document.getElementById('outUnits')!;
+
+  function recalc() {
+    const vial = parseFloat(vialMg.value) || 0;
+    const water = parseFloat(waterMl.value) || 0.01;
+    const dose = parseFloat(doseMg.value) || 0;
+
+    const concentration = vial / water; // mg/mL
+    const volumeToDrawMl = concentration > 0 ? dose / concentration : 0;
+    const units = volumeToDrawMl * 100; // U-100 syringe
+
+    waterMlValue.textContent = `${water.toFixed(1)} mL`;
+    outConcentration.textContent = `${concentration.toFixed(2)} mg/mL`;
+    outVolume.textContent = `${volumeToDrawMl.toFixed(2)} mL`;
+    outUnits.textContent = `${units.toFixed(0)} units`;
+  }
+
+  [vialMg, waterMl, doseMg].forEach((el) => el.addEventListener('input', recalc));
+  recalc();
+</script>

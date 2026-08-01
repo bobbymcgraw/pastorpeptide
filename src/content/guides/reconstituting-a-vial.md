@@ -11,7 +11,7 @@ Here are the step-by-step directions on how to reconstitute a vial of peptide us
 
 ### Preparation and Safety
 
-1. **Calculate the Volume:** Determine the volume of bacteriostatic water needed to achieve your desired concentration (e.g., to create a 1 mg/mL solution from a 10 mg peptide vial, you would need 10 mL of water). You may use an online peptide reconstitution calculator for accuracy.
+1. **Calculate the Volume:** Determine the volume of bacteriostatic water needed to achieve your desired concentration (e.g., to create a 1 mg/mL solution from a 10 mg peptide vial, you would need 10 mL of water). Use the [Reconstitution Calculator](/reconstitution-calculator) to work out the exact draw volume and syringe units for your dose.
 2. **Gather Supplies:** Ensure you have the lyophilized peptide vial, the Hospira Bacteriostatic Water vial, sterile syringes (typically a 3 mL or 5 mL syringe for mixing and an insulin syringe for drawing the final product), and several alcohol prep pads.
 3. **Clean Your Workspace:** Thoroughly wash your hands with soap and water and put on gloves. Clean a flat, sterile work surface and arrange all your supplies.
 4. **Equalize Temperature:** If the peptide vial was stored in the refrigerator or freezer, allow it to sit at room temperature for 10-15 minutes before reconstitution.
