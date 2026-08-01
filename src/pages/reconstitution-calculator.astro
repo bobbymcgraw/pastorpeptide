@@ -27,8 +27,14 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="field">
-        <label for="doseMg">Dose you want (mg)</label>
-        <input type="number" id="doseMg" value="0.25" min="0.001" step="0.001" />
+        <label for="doseAmount">Dose you want</label>
+        <div class="dose-row">
+          <input type="number" id="doseAmount" value="250" min="0.001" step="1" />
+          <div class="unit-toggle" role="group" aria-label="Dose unit">
+            <button type="button" class="unit-btn active" data-unit="mcg">mcg</button>
+            <button type="button" class="unit-btn" data-unit="mg">mg</button>
+          </div>
+        </div>
       </div>
 
       <div class="results">
@@ -44,11 +50,21 @@ import Layout from '../layouts/Layout.astro';
           <span class="result-label">On a U-100 syringe</span>
           <span class="result-value" id="outUnits">10 units</span>
         </div>
+        <div class="result">
+          <span class="result-label">Doses per vial</span>
+          <span class="result-value" id="outDoses">20</span>
+        </div>
       </div>
+
+      <div class="unit-warning" id="unitWarning" hidden></div>
     </div>
 
     <div class="callout">
       <strong>The one rule that matters:</strong> adding more water never changes the total dose in the vial — it only changes how much liquid you have to draw to get a given amount. More water = more diluted = more units per dose. Less water = more concentrated = fewer units per dose. Same medicine, different volume.
+    </div>
+
+    <div class="callout callout-tip">
+      🎯 <strong>The Pastor's sweet spot:</strong> aim for a draw between <strong>10 and 40 units</strong> when you can. Below 10 units, small measuring errors matter a lot more. Above 50–60 units, you're pushing a bigger volume under the skin, which can leave a noticeable bump. If your numbers land outside that range, try adjusting the water volume above.
     </div>
 
     <p class="disclaimer-text"><strong>Disclaimer</strong>: This tool is for educational math only — it does not tell you what dose to take or confirm your specific peptide's stability at a given dilution. Always double and triple check your own numbers, and consult a healthcare provider for your specific dosing and protocol. See <a href="/guides/reconstitution-solutions">Reconstitution Solutions</a> and <a href="/guides/reconstituting-a-vial">Reconstituting a Vial</a> for the full walkthrough, or <a href="/compounds">the encyclopedia</a> for dosing ranges by compound.</p>
@@ -104,9 +120,36 @@ import Layout from '../layouts/Layout.astro';
     color: var(--amber-red);
   }
 
+  .dose-row {
+    display: flex;
+    gap: 10px;
+  }
+  .dose-row input[type="number"] { flex: 1; }
+  .unit-toggle {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .unit-btn {
+    padding: 10px 14px;
+    background: var(--white);
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+  .unit-btn.active {
+    background: var(--amber-red);
+    color: var(--white);
+  }
+
   .results {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-top: 28px;
     padding-top: 24px;
@@ -132,6 +175,17 @@ import Layout from '../layouts/Layout.astro';
   }
   .result-primary .result-value { color: var(--amber-red); }
 
+  .unit-warning {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+  .unit-warning.low { background: rgba(226, 71, 55, 0.12); color: var(--amber-red); }
+  .unit-warning.high { background: rgba(226, 71, 55, 0.12); color: var(--amber-red); }
+  .unit-warning.good { background: rgba(71, 76, 61, 0.12); color: var(--moss, var(--navy)); }
+
   .callout {
     margin-top: 24px;
     background: var(--cream-dark, var(--cream));
@@ -141,6 +195,7 @@ import Layout from '../layouts/Layout.astro';
     font-size: 0.92rem;
     color: var(--text);
   }
+  .callout-tip { background: rgba(226, 71, 55, 0.08); }
   .disclaimer-text {
     margin-top: 20px;
     font-size: 0.82rem;
@@ -149,34 +204,69 @@ import Layout from '../layouts/Layout.astro';
   }
 
   @media (max-width: 480px) {
-    .results { grid-template-columns: 1fr; }
+    .results { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 
 <script>
   const vialMg = document.getElementById('vialMg') as HTMLInputElement;
   const waterMl = document.getElementById('waterMl') as HTMLInputElement;
-  const doseMg = document.getElementById('doseMg') as HTMLInputElement;
+  const doseAmount = document.getElementById('doseAmount') as HTMLInputElement;
+  const unitButtons = document.querySelectorAll<HTMLButtonElement>('.unit-btn');
   const waterMlValue = document.getElementById('waterMlValue')!;
   const outConcentration = document.getElementById('outConcentration')!;
   const outVolume = document.getElementById('outVolume')!;
   const outUnits = document.getElementById('outUnits')!;
+  const outDoses = document.getElementById('outDoses')!;
+  const unitWarning = document.getElementById('unitWarning')!;
+
+  let doseUnit: 'mcg' | 'mg' = 'mcg';
 
   function recalc() {
     const vial = parseFloat(vialMg.value) || 0;
     const water = parseFloat(waterMl.value) || 0.01;
-    const dose = parseFloat(doseMg.value) || 0;
+    const rawDose = parseFloat(doseAmount.value) || 0;
+    const doseMg = doseUnit === 'mcg' ? rawDose / 1000 : rawDose;
 
     const concentration = vial / water; // mg/mL
-    const volumeToDrawMl = concentration > 0 ? dose / concentration : 0;
+    const volumeToDrawMl = concentration > 0 ? doseMg / concentration : 0;
     const units = volumeToDrawMl * 100; // U-100 syringe
+    const dosesPerVial = doseMg > 0 ? vial / doseMg : 0;
 
     waterMlValue.textContent = `${water.toFixed(1)} mL`;
     outConcentration.textContent = `${concentration.toFixed(2)} mg/mL`;
     outVolume.textContent = `${volumeToDrawMl.toFixed(2)} mL`;
     outUnits.textContent = `${units.toFixed(0)} units`;
+    outDoses.textContent = dosesPerVial > 0 ? dosesPerVial.toFixed(1) : '—';
+
+    unitWarning.hidden = false;
+    unitWarning.className = 'unit-warning';
+    if (units === 0) {
+      unitWarning.hidden = true;
+    } else if (units < 10) {
+      unitWarning.classList.add('low');
+      unitWarning.textContent = '⚠️ Under 10 units — a small measuring error is a big percentage error at this volume. Consider less water to concentrate the dose.';
+    } else if (units > 50) {
+      unitWarning.classList.add('high');
+      unitWarning.textContent = '⚠️ Over 50 units — that\'s a larger volume under the skin and more likely to leave a bump. Consider more water to dilute the dose.';
+    } else {
+      unitWarning.classList.add('good');
+      unitWarning.textContent = '✅ Right in the 10–40 unit sweet spot.';
+    }
   }
 
-  [vialMg, waterMl, doseMg].forEach((el) => el.addEventListener('input', recalc));
+  unitButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const newUnit = btn.dataset.unit as 'mcg' | 'mg';
+      if (newUnit === doseUnit) return;
+      const current = parseFloat(doseAmount.value) || 0;
+      doseAmount.value = newUnit === 'mg' ? (current / 1000).toString() : (current * 1000).toString();
+      doseUnit = newUnit;
+      unitButtons.forEach((b) => b.classList.toggle('active', b === btn));
+      recalc();
+    });
+  });
+
+  [vialMg, waterMl, doseAmount].forEach((el) => el.addEventListener('input', recalc));
   recalc();
 </script>
