@@ -585,10 +585,7 @@ import Layout from '../layouts/Layout.astro';
   const blendResults = document.getElementById('blendResults')!;
   const blendUnitWarning = document.getElementById('blendUnitWarning')!;
 
-  let blendRowCount = 0;
-
   function addBlendRow(name: string, mg: number) {
-    blendRowCount += 1;
     const row = document.createElement('div');
     row.className = 'blend-row';
     row.innerHTML = `
