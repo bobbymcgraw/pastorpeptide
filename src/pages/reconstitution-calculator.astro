@@ -38,64 +38,102 @@ import Layout from '../layouts/Layout.astro';
       <p class="primer-secret">The whole secret: when you mix powder into water, the medicine doesn't disappear — it just spreads out. Same amount of "stuff," more or less room to move in. That's the entire subject.</p>
     </div>
 
-    <div class="calc-card">
-      <div class="field">
-        <label for="vialMg">Vial strength (mg)</label>
-        <input type="number" id="vialMg" value="5" min="0.1" step="0.1" />
-      </div>
-
-      <div class="field">
-        <label for="waterMl">Bacteriostatic water to add (mL)</label>
-        <input type="range" id="waterMl" value="2" min="0.5" max="5" step="0.1" />
-        <div class="range-labels">
-          <span>Less water (more concentrated)</span>
-          <span id="waterMlValue">2.0 mL</span>
-          <span>More water (less concentrated)</span>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="doseAmount">Dose you want</label>
-        <div class="dose-row">
-          <input type="number" id="doseAmount" value="250" min="0.001" step="1" />
-          <div class="unit-toggle" role="group" aria-label="Dose unit">
-            <button type="button" class="unit-btn active" data-unit="mcg">mcg</button>
-            <button type="button" class="unit-btn" data-unit="mg">mg</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="results">
-        <div class="result">
-          <span class="result-label">Concentration</span>
-          <span class="result-value" id="outConcentration">2.50 mg/mL</span>
-        </div>
-        <div class="result result-primary">
-          <span class="result-label">Draw this much</span>
-          <span class="result-value" id="outVolume">0.10 mL</span>
-        </div>
-        <div class="result">
-          <span class="result-label">On a U-100 syringe</span>
-          <span class="result-value" id="outUnits">10 units</span>
-        </div>
-        <div class="result">
-          <span class="result-label">Doses per vial</span>
-          <span class="result-value" id="outDoses">20</span>
-        </div>
-      </div>
-
-      <div class="unit-warning" id="unitWarning" hidden></div>
+    <div class="calc-tabs" role="tablist" aria-label="Calculator mode">
+      <button type="button" class="calc-tab active" data-panel="single">Single Peptide</button>
+      <button type="button" class="calc-tab" data-panel="blend">Blend Dosing</button>
     </div>
 
-    <div class="callout">
-      <strong>The one rule that matters:</strong> adding more water never changes the total dose in the vial — it only changes how much liquid you have to draw to get a given amount. More water = more diluted = more units per dose. Less water = more concentrated = fewer units per dose. Same medicine, different volume.
+    <div id="panel-single" class="calc-panel">
+      <div class="calc-card">
+        <div class="field">
+          <label for="vialMg">Vial strength (mg)</label>
+          <input type="number" id="vialMg" value="5" min="0.1" step="0.1" />
+        </div>
+
+        <div class="field">
+          <label for="waterMl">Bacteriostatic water to add (mL)</label>
+          <input type="range" id="waterMl" value="2" min="0.5" max="5" step="0.1" />
+          <div class="range-labels">
+            <span>Less water (more concentrated)</span>
+            <span id="waterMlValue">2.0 mL</span>
+            <span>More water (less concentrated)</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="doseAmount">Dose you want</label>
+          <div class="dose-row">
+            <input type="number" id="doseAmount" value="250" min="0.001" step="1" />
+            <div class="unit-toggle" role="group" aria-label="Dose unit">
+              <button type="button" class="unit-btn active" data-unit="mcg">mcg</button>
+              <button type="button" class="unit-btn" data-unit="mg">mg</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="results">
+          <div class="result">
+            <span class="result-label">Concentration</span>
+            <span class="result-value" id="outConcentration">2.50 mg/mL</span>
+          </div>
+          <div class="result result-primary">
+            <span class="result-label">Draw this much</span>
+            <span class="result-value" id="outVolume">0.10 mL</span>
+          </div>
+          <div class="result">
+            <span class="result-label">On a U-100 syringe</span>
+            <span class="result-value" id="outUnits">10 units</span>
+          </div>
+          <div class="result">
+            <span class="result-label">Doses per vial</span>
+            <span class="result-value" id="outDoses">20</span>
+          </div>
+        </div>
+
+        <div class="unit-warning" id="unitWarning" hidden></div>
+      </div>
+
+      <div class="callout">
+        <strong>The one rule that matters:</strong> adding more water never changes the total dose in the vial — it only changes how much liquid you have to draw to get a given amount. More water = more diluted = more units per dose. Less water = more concentrated = fewer units per dose. Same medicine, different volume.
+      </div>
+    </div>
+
+    <div id="panel-blend" class="calc-panel" hidden>
+      <div class="calc-card">
+        <p class="blend-intro">For a single vial holding <strong>more than one peptide</strong> — like a KLOW or GLOW blend, or your own BPC-157 + TB-500 mix. Add each peptide's total mg in the vial, set the shared water volume, then dial in a draw amount to see what dose of <em>each</em> peptide comes out at that draw.</p>
+
+        <div id="blendRows" class="blend-rows"></div>
+        <button type="button" id="addBlendRow" class="add-row-btn">+ Add another peptide</button>
+
+        <div class="field blend-shared">
+          <label for="blendWaterMl">Bacteriostatic water to add (mL, shared by the whole vial)</label>
+          <input type="range" id="blendWaterMl" value="3" min="0.5" max="10" step="0.1" />
+          <div class="range-labels">
+            <span>Less water</span>
+            <span id="blendWaterMlValue">3.0 mL</span>
+            <span>More water</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="blendUnits">What you're drawing (units on a U-100 syringe)</label>
+          <input type="number" id="blendUnits" value="20" min="1" step="1" />
+        </div>
+
+        <div id="blendResults" class="blend-results"></div>
+        <div class="unit-warning" id="blendUnitWarning" hidden></div>
+      </div>
+
+      <div class="callout">
+        <strong>Heads up:</strong> this assumes every peptide in the vial is evenly dissolved in the same water, so one draw pulls each peptide in proportion to how much of it is in the vial. That's how blends work in practice — you can't draw more of one component than another from a single mixed vial.
+      </div>
     </div>
 
     <div class="callout callout-tip">
       🎯 <strong>The Pastor's sweet spot:</strong> aim for a draw between <strong>10 and 40 units</strong> when you can. Below 10 units, small measuring errors matter a lot more. Above 50–60 units, you're pushing a bigger volume under the skin, which can leave a noticeable bump. If your numbers land outside that range, try adjusting the water volume above.
     </div>
 
-    <p class="disclaimer-text"><strong>Disclaimer</strong>: This tool is for educational math only — it does not tell you what dose to take or confirm your specific peptide's stability at a given dilution. Always double and triple check your own numbers, and consult a healthcare provider for your specific dosing and protocol. See <a href="/guides/reconstitution-solutions">Reconstitution Solutions</a> and <a href="/guides/reconstituting-a-vial">Reconstituting a Vial</a> for the full walkthrough, or <a href="/compounds">the encyclopedia</a> for dosing ranges by compound.</p>
+    <p class="disclaimer-text"><strong>Disclaimer</strong>: This tool is for educational math only — it does not tell you what dose to take or confirm your specific peptide's stability at a given dilution or in a blend together. Always double and triple check your own numbers, and consult a healthcare provider for your specific dosing and protocol. See <a href="/guides/reconstitution-solutions">Reconstitution Solutions</a> and <a href="/guides/reconstituting-a-vial">Reconstituting a Vial</a> for the full walkthrough, or <a href="/compounds">the encyclopedia</a> for dosing ranges by compound.</p>
   </div>
 </Layout>
 
@@ -136,6 +174,127 @@ import Layout from '../layouts/Layout.astro';
     font-size: 0.95rem;
     font-style: italic;
     color: var(--text);
+  }
+
+  .calc-tabs {
+    display: flex;
+    gap: 6px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  .calc-tab {
+    flex: 1;
+    padding: 10px 12px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+  .calc-tab.active {
+    background: var(--white);
+    color: var(--navy);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  .blend-intro {
+    margin: 0 0 20px;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+  .blend-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .blend-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .blend-row input[type="text"] {
+    flex: 1.3;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+  }
+  .blend-row input[type="number"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+  }
+  .blend-row-mg-label {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+  .remove-row-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    flex-shrink: 0;
+  }
+  .remove-row-btn:hover { color: var(--amber-red); }
+  .add-row-btn {
+    background: none;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+  .add-row-btn:hover { border-color: var(--amber-red); color: var(--amber-red); }
+  .blend-shared { margin-top: 4px; }
+
+  .blend-results {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .blend-result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .blend-result-name {
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .blend-result-dose {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--amber-red);
   }
 
   .calc-card {
@@ -330,4 +489,105 @@ import Layout from '../layouts/Layout.astro';
 
   [vialMg, waterMl, doseAmount].forEach((el) => el.addEventListener('input', recalc));
   recalc();
+
+  // --- Tab switching ---
+  const calcTabs = document.querySelectorAll<HTMLButtonElement>('.calc-tab');
+  const panelSingle = document.getElementById('panel-single')!;
+  const panelBlend = document.getElementById('panel-blend')!;
+
+  calcTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      calcTabs.forEach((t) => t.classList.toggle('active', t === tab));
+      const showBlend = tab.dataset.panel === 'blend';
+      panelSingle.hidden = showBlend;
+      panelBlend.hidden = !showBlend;
+    });
+  });
+
+  // --- Blend dosing ---
+  const blendRows = document.getElementById('blendRows')!;
+  const addBlendRowBtn = document.getElementById('addBlendRow')!;
+  const blendWaterMl = document.getElementById('blendWaterMl') as HTMLInputElement;
+  const blendWaterMlValue = document.getElementById('blendWaterMlValue')!;
+  const blendUnits = document.getElementById('blendUnits') as HTMLInputElement;
+  const blendResults = document.getElementById('blendResults')!;
+  const blendUnitWarning = document.getElementById('blendUnitWarning')!;
+
+  let blendRowCount = 0;
+
+  function addBlendRow(name: string, mg: number) {
+    blendRowCount += 1;
+    const row = document.createElement('div');
+    row.className = 'blend-row';
+    row.innerHTML = `
+      <input type="text" class="blend-name" value="${name}" placeholder="Peptide name" />
+      <input type="number" class="blend-mg" value="${mg}" min="0.01" step="0.1" />
+      <span class="blend-row-mg-label">mg in vial</span>
+      <button type="button" class="remove-row-btn" aria-label="Remove peptide">✕</button>
+    `;
+    row.querySelectorAll('input').forEach((el) => el.addEventListener('input', recalcBlend));
+    row.querySelector('.remove-row-btn')!.addEventListener('click', () => {
+      row.remove();
+      recalcBlend();
+    });
+    blendRows.appendChild(row);
+  }
+
+  addBlendRowBtn.addEventListener('click', () => {
+    addBlendRow('', 5);
+    recalcBlend();
+  });
+
+  function recalcBlend() {
+    const water = parseFloat(blendWaterMl.value) || 0.01;
+    const units = parseFloat(blendUnits.value) || 0;
+    const drawMl = units / 100;
+
+    blendWaterMlValue.textContent = `${water.toFixed(1)} mL`;
+
+    const rows = Array.from(blendRows.querySelectorAll<HTMLDivElement>('.blend-row'));
+    blendResults.innerHTML = '';
+
+    rows.forEach((row, i) => {
+      const nameInput = row.querySelector<HTMLInputElement>('.blend-name')!;
+      const mgInput = row.querySelector<HTMLInputElement>('.blend-mg')!;
+      const mg = parseFloat(mgInput.value) || 0;
+      const name = nameInput.value.trim() || `Peptide ${i + 1}`;
+
+      const concentration = mg / water; // mg/mL
+      const doseMg = concentration * drawMl;
+      const doseMcg = doseMg * 1000;
+
+      const resultRow = document.createElement('div');
+      resultRow.className = 'blend-result-row';
+      resultRow.innerHTML = `
+        <span class="blend-result-name">${name}</span>
+        <span class="blend-result-dose">${doseMcg < 1000 ? doseMcg.toFixed(0) + ' mcg' : doseMg.toFixed(2) + ' mg'}</span>
+      `;
+      blendResults.appendChild(resultRow);
+    });
+
+    blendUnitWarning.hidden = false;
+    blendUnitWarning.className = 'unit-warning';
+    if (units === 0 || rows.length === 0) {
+      blendUnitWarning.hidden = true;
+    } else if (units < 10) {
+      blendUnitWarning.classList.add('low');
+      blendUnitWarning.textContent = '⚠️ Under 10 units — a small measuring error is a big percentage error at this volume.';
+    } else if (units > 50) {
+      blendUnitWarning.classList.add('high');
+      blendUnitWarning.textContent = '⚠️ Over 50 units — a larger volume under the skin, more likely to leave a bump.';
+    } else {
+      blendUnitWarning.classList.add('good');
+      blendUnitWarning.textContent = '✅ Right in the 10–40 unit sweet spot.';
+    }
+  }
+
+  blendWaterMl.addEventListener('input', recalcBlend);
+  blendUnits.addEventListener('input', recalcBlend);
+
+  // Seed with two example rows (BPC-157 + TB-500, a common blend)
+  addBlendRow('BPC-157', 5);
+  addBlendRow('TB-500', 5);
+  recalcBlend();
 </script>
