@@ -54,6 +54,32 @@ import Layout from '../layouts/Layout.astro';
       <p>Now. Let us begin.</p>
     </section>
 
+    <section class="section new-here">
+      <span class="chapter-label">New Here?</span>
+      <h2>Feeling a Little Overwhelmed?</h2>
+      <p class="chapter-sub"><em>Totally normal. Pick a door.</em></p>
+      <div class="new-here-grid">
+        <a href="/quiz" class="new-here-card">
+          <span class="new-here-icon">🧭</span>
+          <h3>Not sure where to start?</h3>
+          <p>Take a 30-second quiz and I'll point you to the right compounds for your goal.</p>
+          <span class="new-here-cta">Take the quiz &rarr;</span>
+        </a>
+        <a href="#ch1" class="new-here-card">
+          <span class="new-here-icon">📖</span>
+          <h3>Just want the basics?</h3>
+          <p>Keep scrolling. This whole page is built to walk you through it, chapter by chapter, starting now.</p>
+          <span class="new-here-cta">Start reading &rarr;</span>
+        </a>
+        <a href="https://calendly.com/bobbymcgraw/pastor-peptide-call" target="_blank" rel="noopener noreferrer" class="new-here-card">
+          <span class="new-here-icon">📞</span>
+          <h3>Want to talk it through?</h3>
+          <p>Sometimes it's easier to just ask a person. Book a free call and we'll figure it out together.</p>
+          <span class="new-here-cta">Book a call &rarr;</span>
+        </a>
+      </div>
+    </section>
+
     <section class="section" id="ch1">
       <span class="chapter-label">Chapter 1</span>
       <h2>🧬 What Are Peptides?</h2>
@@ -506,6 +532,56 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+  .new-here {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px;
+  }
+  .new-here h2 { margin: 4px 0 4px; }
+  .new-here-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .new-here-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .new-here-card:hover {
+    border-color: var(--amber-red);
+    transform: translateY(-2px);
+  }
+  .new-here-icon { font-size: 1.6rem; }
+  .new-here-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--navy);
+  }
+  .new-here-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    flex-grow: 1;
+  }
+  .new-here-cta {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--amber-red);
+  }
+  @media (max-width: 720px) {
+    .new-here-grid { grid-template-columns: 1fr; }
+  }
+
   .hero {
     background: var(--navy);
     color: var(--white);
