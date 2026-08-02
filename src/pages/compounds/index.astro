@@ -13,21 +13,26 @@ const grouped = groupBy(compounds, COMPOUND_GROUP_ORDER);
     <span class="chapter-label">The Book of Peptides</span>
     <h1>Peptide Encyclopedia</h1>
     <p class="lede">{compounds.length} compounds, organized by category &mdash; the scripture on each one the congregation actually asks about.</p>
+    <div class="search-wrap">
+      <input type="search" id="compoundSearch" placeholder="Already know what you're looking for? Search by name…" autocomplete="off" />
+      <span class="search-count" id="searchCount"></span>
+    </div>
   </div>
 
-  <div class="wrap groups">
+  <div class="wrap groups" id="groupsWrap">
     {grouped.map(({ group, items }) => (
-      <section class="group">
+      <section class="group" data-group>
         <h2>{group}</h2>
         <div class="grid grid-cards">
           {items.map((c) => (
-            <a class="card" href={`/compounds/${c.slug}`}>
+            <a class="card" href={`/compounds/${c.slug}`} data-title={c.data.title.toLowerCase()}>
               <h3>{c.data.title}</h3>
             </a>
           ))}
         </div>
       </section>
     ))}
+    <p class="no-results" id="noResults" hidden>No compounds match "<span id="noResultsQuery"></span>". Try a different spelling, or browse the categories above.</p>
   </div>
 </Layout>
 
@@ -42,6 +47,31 @@ const grouped = groupBy(compounds, COMPOUND_GROUP_ORDER);
   }
   h1 { margin: 6px 0 6px; }
   .lede { color: var(--text-muted); max-width: 600px; }
+  .search-wrap {
+    margin-top: 20px;
+    max-width: 420px;
+    position: relative;
+  }
+  #compoundSearch {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+  }
+  #compoundSearch:focus {
+    outline: none;
+    border-color: var(--amber-red);
+  }
+  .search-count {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
   .groups {
     padding: 0 20px 60px;
   }
@@ -55,4 +85,46 @@ const grouped = groupBy(compounds, COMPOUND_GROUP_ORDER);
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
   }
+  .no-results {
+    margin-top: 40px;
+    color: var(--text-muted);
+  }
 </style>
+
+<script>
+  const searchInput = document.getElementById('compoundSearch') as HTMLInputElement;
+  const groups = document.querySelectorAll<HTMLElement>('[data-group]');
+  const cards = document.querySelectorAll<HTMLAnchorElement>('.card[data-title]');
+  const searchCount = document.getElementById('searchCount')!;
+  const noResults = document.getElementById('noResults')!;
+  const noResultsQuery = document.getElementById('noResultsQuery')!;
+
+  function runSearch() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    groups.forEach((group) => {
+      let groupHasMatch = false;
+      group.querySelectorAll<HTMLAnchorElement>('.card[data-title]').forEach((card) => {
+        const match = !query || (card.dataset.title || '').includes(query);
+        card.hidden = !match;
+        if (match) {
+          groupHasMatch = true;
+          visibleCount += 1;
+        }
+      });
+      group.hidden = !groupHasMatch;
+    });
+
+    if (!query) {
+      searchCount.textContent = '';
+    } else {
+      searchCount.textContent = `${visibleCount} match${visibleCount === 1 ? '' : 'es'}`;
+    }
+
+    noResults.hidden = !(query && visibleCount === 0);
+    noResultsQuery.textContent = searchInput.value.trim();
+  }
+
+  searchInput.addEventListener('input', runSearch);
+</script>
