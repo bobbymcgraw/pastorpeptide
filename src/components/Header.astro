@@ -3,7 +3,14 @@ const nav = [
   { href: '/', label: 'Start Here' },
   { href: '/seminary', label: 'The Seminary' },
   { href: '/quiz', label: 'Find Your Peptide' },
-  { href: '/reconstitution-calculator', label: 'The Sacred Math' },
+  {
+    href: '/reconstitution-calculator',
+    label: 'The Sacred Math',
+    children: [
+      { href: '/reconstitution-calculator', label: 'Reconstitution Calculator' },
+      { href: '/tdee-calculator', label: 'TDEE Calculator' },
+    ],
+  },
   { href: '/links', label: 'Links' },
 ];
 const path = Astro.url.pathname;
@@ -16,12 +23,30 @@ const path = Astro.url.pathname;
     </a>
     <nav class="site-nav">
       {nav.map((item) => (
-        <a
-          href={item.href}
-          class={(item.href === '/' ? path === '/' : path.startsWith(item.href)) ? 'active' : ''}
-        >
-          {item.label}
-        </a>
+        item.children ? (
+          <div class="nav-dropdown">
+            <a
+              href={item.href}
+              class={`dropdown-trigger ${path.startsWith(item.href) || item.children.some((c) => path.startsWith(c.href)) ? 'active' : ''}`}
+            >
+              {item.label} <span class="caret">▾</span>
+            </a>
+            <div class="dropdown-menu">
+              {item.children.map((child) => (
+                <a href={child.href} class={path.startsWith(child.href) ? 'active' : ''}>
+                  {child.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <a
+            href={item.href}
+            class={(item.href === '/' ? path === '/' : path.startsWith(item.href)) ? 'active' : ''}
+          >
+            {item.label}
+          </a>
+        )
       ))}
       <a href="https://bobbymcgraw.com" target="_blank" rel="noopener noreferrer">Meet the Pastor</a>
       <a class="cta" href="https://calendly.com/bobbymcgraw/pastor-peptide-call" target="_blank" rel="noopener noreferrer">Book a Call</a>
@@ -71,29 +96,102 @@ const path = Astro.url.pathname;
     gap: 20px;
     flex-wrap: wrap;
   }
-  .site-nav a {
+  .site-nav > a {
     color: rgba(255,255,255,0.75);
     font-size: 0.92rem;
     font-weight: 600;
     text-decoration: none;
   }
-  .site-nav a:hover,
-  .site-nav a.active {
+  .site-nav > a:hover,
+  .site-nav > a.active {
     color: var(--gold-light);
   }
-  .site-nav a.cta {
+  .site-nav > a.cta {
     background: var(--gold);
     color: var(--white);
     padding: 7px 16px;
     border-radius: 999px;
     font-size: 0.85rem;
   }
-  .site-nav a.cta:hover {
+  .site-nav > a.cta:hover {
     background: var(--amber-red);
     color: var(--white);
   }
+
+  .nav-dropdown {
+    position: relative;
+  }
+  .dropdown-trigger {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .dropdown-trigger:hover,
+  .dropdown-trigger.active {
+    color: var(--gold-light);
+  }
+  .caret {
+    font-size: 0.7rem;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background: var(--navy);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 210px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  .nav-dropdown.open .dropdown-menu {
+    display: flex;
+  }
+  .dropdown-menu a {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .dropdown-menu a:hover,
+  .dropdown-menu a.active {
+    background: rgba(255,255,255,0.08);
+    color: var(--gold-light);
+  }
+
   @media (max-width: 640px) {
     .bar { height: auto; padding: 12px 20px; }
     .site-nav { gap: 14px; }
+    .dropdown-menu {
+      position: static;
+      margin-top: 6px;
+      box-shadow: none;
+      display: flex;
+      border: none;
+      padding: 0 0 0 12px;
+    }
   }
 </style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.nav-dropdown').forEach((dropdown) => {
+    dropdown.addEventListener('mouseenter', () => dropdown.classList.add('open'));
+    dropdown.addEventListener('mouseleave', () => dropdown.classList.remove('open'));
+    dropdown.addEventListener('focusin', () => dropdown.classList.add('open'));
+    dropdown.addEventListener('focusout', (e) => {
+      if (!dropdown.contains((e as FocusEvent).relatedTarget as Node)) {
+        dropdown.classList.remove('open');
+      }
+    });
+  });
+</script>
