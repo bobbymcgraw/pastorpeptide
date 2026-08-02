@@ -25,15 +25,15 @@ import Layout from '../layouts/Layout.astro';
           <input type="number" id="age" value="35" min="13" max="100" step="1" />
         </div>
         <div class="field">
-          <label for="heightCm">Height (cm)</label>
-          <input type="number" id="heightCm" value="178" min="120" max="230" step="1" />
+          <label for="heightCm">Height (in)</label>
+          <input type="number" id="heightCm" value="70" min="47" max="91" step="0.5" />
         </div>
         <div class="field">
-          <label for="weightKg">Weight (kg)</label>
-          <input type="number" id="weightKg" value="84" min="30" max="250" step="0.5" />
+          <label for="weightKg">Weight (lb)</label>
+          <input type="number" id="weightKg" value="185" min="66" max="550" step="1" />
         </div>
       </div>
-      <p class="field-note">Prefer pounds and inches? <button type="button" id="unitToggle" class="link-btn">Switch to imperial</button></p>
+      <p class="field-note">Prefer centimeters and kilos? <button type="button" id="unitToggle" class="link-btn">Switch to metric</button></p>
 
       <div class="field">
         <label for="activity">Activity level</label>
@@ -239,7 +239,7 @@ import Layout from '../layouts/Layout.astro';
   const outBulk = document.getElementById('outBulk')!;
 
   let sex: 'male' | 'female' = 'male';
-  let imperial = false;
+  let imperial = true;
 
   function recalc() {
     const ageVal = parseFloat(age.value) || 0;
