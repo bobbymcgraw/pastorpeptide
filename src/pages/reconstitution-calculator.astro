@@ -41,6 +41,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="calc-tabs" role="tablist" aria-label="Calculator mode">
       <button type="button" class="calc-tab active" data-panel="single">Single Peptide</button>
       <button type="button" class="calc-tab" data-panel="blend">Blend Dosing</button>
+      <button type="button" class="calc-tab" data-panel="nasal">Intranasal</button>
     </div>
 
     <div id="panel-single" class="calc-panel">
@@ -129,7 +130,68 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="callout callout-tip">
+    <div id="panel-nasal" class="calc-panel" hidden>
+      <div class="calc-card">
+        <p class="blend-intro">For peptides taken as a <strong>nasal spray</strong> instead of an injection — some people use this route for things like PT-141 or Melanotan. Same underlying math, different delivery: instead of syringe units, you're counting sprays.</p>
+
+        <div class="field">
+          <label for="nasalMg">Total peptide in the bottle (mg)</label>
+          <input type="number" id="nasalMg" value="10" min="0.1" step="0.1" />
+        </div>
+
+        <div class="field">
+          <label for="nasalLiquidMl">Total liquid in the bottle (mL)</label>
+          <input type="range" id="nasalLiquidMl" value="5" min="1" max="15" step="0.5" />
+          <div class="range-labels">
+            <span>Less liquid</span>
+            <span id="nasalLiquidMlValue">5.0 mL</span>
+            <span>More liquid</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="sprayVolume">Spray size (mL per actuation)</label>
+          <input type="number" id="sprayVolume" value="0.1" min="0.01" step="0.01" />
+          <p class="field-note">Most standard nasal spray pumps deliver about 0.1 mL (100 microliters) per spray — check your specific pump if you know it.</p>
+        </div>
+
+        <div class="field">
+          <label for="nasalDoseAmount">Dose you want per use</label>
+          <div class="dose-row">
+            <input type="number" id="nasalDoseAmount" value="250" min="0.001" step="1" />
+            <div class="unit-toggle" role="group" aria-label="Nasal dose unit">
+              <button type="button" class="unit-btn active" data-nasal-unit="mcg">mcg</button>
+              <button type="button" class="unit-btn" data-nasal-unit="mg">mg</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="results">
+          <div class="result">
+            <span class="result-label">Concentration</span>
+            <span class="result-value" id="nasalOutConcentration">2.00 mg/mL</span>
+          </div>
+          <div class="result">
+            <span class="result-label">Per spray</span>
+            <span class="result-value" id="nasalOutPerSpray">200 mcg</span>
+          </div>
+          <div class="result result-primary">
+            <span class="result-label">Sprays needed</span>
+            <span class="result-value" id="nasalOutSprays">1.3</span>
+          </div>
+          <div class="result">
+            <span class="result-label">Sprays per bottle</span>
+            <span class="result-value" id="nasalOutTotal">50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Heads up:</strong> nasal spray dosing is naturally imprecise — actual delivery varies with pump priming, spray technique, and how much gets absorbed versus swallowed. Round to the nearest whole or half spray, and treat this as a starting estimate, not a lab-grade number.
+      </div>
+    </div>
+
+    <div class="callout callout-tip" id="syringeSweetSpot">
       🎯 <strong>The Pastor's sweet spot:</strong> aim for a draw between <strong>10 and 40 units</strong> when you can. Below 10 units, small measuring errors matter a lot more. Above 50–60 units, you're pushing a bigger volume under the skin, which can leave a noticeable bump. If your numbers land outside that range, try adjusting the water volume above.
     </div>
 
@@ -305,6 +367,11 @@ import Layout from '../layouts/Layout.astro';
   }
   .field { margin-bottom: 24px; }
   .field:last-of-type { margin-bottom: 0; }
+  .field-note {
+    margin: 6px 0 0;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
   label {
     display: block;
     font-weight: 600;
@@ -432,7 +499,7 @@ import Layout from '../layouts/Layout.astro';
   const vialMg = document.getElementById('vialMg') as HTMLInputElement;
   const waterMl = document.getElementById('waterMl') as HTMLInputElement;
   const doseAmount = document.getElementById('doseAmount') as HTMLInputElement;
-  const unitButtons = document.querySelectorAll<HTMLButtonElement>('.unit-btn');
+  const unitButtons = document.querySelectorAll<HTMLButtonElement>('.unit-btn[data-unit]');
   const waterMlValue = document.getElementById('waterMlValue')!;
   const outConcentration = document.getElementById('outConcentration')!;
   const outVolume = document.getElementById('outVolume')!;
@@ -492,15 +559,20 @@ import Layout from '../layouts/Layout.astro';
 
   // --- Tab switching ---
   const calcTabs = document.querySelectorAll<HTMLButtonElement>('.calc-tab');
-  const panelSingle = document.getElementById('panel-single')!;
-  const panelBlend = document.getElementById('panel-blend')!;
+  const calcPanels: Record<string, HTMLElement> = {
+    single: document.getElementById('panel-single')!,
+    blend: document.getElementById('panel-blend')!,
+    nasal: document.getElementById('panel-nasal')!,
+  };
 
   calcTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       calcTabs.forEach((t) => t.classList.toggle('active', t === tab));
-      const showBlend = tab.dataset.panel === 'blend';
-      panelSingle.hidden = showBlend;
-      panelBlend.hidden = !showBlend;
+      const active = tab.dataset.panel!;
+      Object.entries(calcPanels).forEach(([key, panel]) => {
+        panel.hidden = key !== active;
+      });
+      document.getElementById('syringeSweetSpot')!.hidden = active === 'nasal';
     });
   });
 
@@ -590,4 +662,53 @@ import Layout from '../layouts/Layout.astro';
   addBlendRow('BPC-157', 5);
   addBlendRow('TB-500', 5);
   recalcBlend();
+
+  // --- Intranasal ---
+  const nasalMg = document.getElementById('nasalMg') as HTMLInputElement;
+  const nasalLiquidMl = document.getElementById('nasalLiquidMl') as HTMLInputElement;
+  const nasalLiquidMlValue = document.getElementById('nasalLiquidMlValue')!;
+  const sprayVolume = document.getElementById('sprayVolume') as HTMLInputElement;
+  const nasalDoseAmount = document.getElementById('nasalDoseAmount') as HTMLInputElement;
+  const nasalUnitButtons = document.querySelectorAll<HTMLButtonElement>('.unit-btn[data-nasal-unit]');
+  const nasalOutConcentration = document.getElementById('nasalOutConcentration')!;
+  const nasalOutPerSpray = document.getElementById('nasalOutPerSpray')!;
+  const nasalOutSprays = document.getElementById('nasalOutSprays')!;
+  const nasalOutTotal = document.getElementById('nasalOutTotal')!;
+
+  let nasalDoseUnit: 'mcg' | 'mg' = 'mcg';
+
+  function recalcNasal() {
+    const totalMg = parseFloat(nasalMg.value) || 0;
+    const liquidMl = parseFloat(nasalLiquidMl.value) || 0.01;
+    const sprayMl = parseFloat(sprayVolume.value) || 0.1;
+    const rawDose = parseFloat(nasalDoseAmount.value) || 0;
+    const doseMg = nasalDoseUnit === 'mcg' ? rawDose / 1000 : rawDose;
+
+    const concentration = totalMg / liquidMl; // mg/mL
+    const mgPerSpray = concentration * sprayMl;
+    const mcgPerSpray = mgPerSpray * 1000;
+    const spraysNeeded = mgPerSpray > 0 ? doseMg / mgPerSpray : 0;
+    const totalSprays = sprayMl > 0 ? liquidMl / sprayMl : 0;
+
+    nasalLiquidMlValue.textContent = `${liquidMl.toFixed(1)} mL`;
+    nasalOutConcentration.textContent = `${concentration.toFixed(2)} mg/mL`;
+    nasalOutPerSpray.textContent = mcgPerSpray < 1000 ? `${mcgPerSpray.toFixed(0)} mcg` : `${mgPerSpray.toFixed(2)} mg`;
+    nasalOutSprays.textContent = spraysNeeded.toFixed(1);
+    nasalOutTotal.textContent = totalSprays.toFixed(0);
+  }
+
+  nasalUnitButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const newUnit = btn.dataset.nasalUnit as 'mcg' | 'mg';
+      if (newUnit === nasalDoseUnit) return;
+      const current = parseFloat(nasalDoseAmount.value) || 0;
+      nasalDoseAmount.value = newUnit === 'mg' ? (current / 1000).toString() : (current * 1000).toString();
+      nasalDoseUnit = newUnit;
+      nasalUnitButtons.forEach((b) => b.classList.toggle('active', b === btn));
+      recalcNasal();
+    });
+  });
+
+  [nasalMg, nasalLiquidMl, sprayVolume, nasalDoseAmount].forEach((el) => el.addEventListener('input', recalcNasal));
+  recalcNasal();
 </script>
