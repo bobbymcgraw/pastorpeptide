@@ -1,0 +1,296 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="TDEE Calculator">
+  <div class="wrap header">
+    <a class="back" href="/seminary">&larr; The Seminary</a>
+    <span class="chapter-label">Know Your Numbers</span>
+    <h1>TDEE Calculator</h1>
+    <p class="lede">Your Total Daily Energy Expenditure — roughly how many calories your body burns in a day, activity included. Useful context whether you're planning a GLP-1 protocol, a cut, or just trying to eat like an adult.</p>
+  </div>
+
+  <div class="wrap calc">
+    <div class="calc-card">
+      <div class="field">
+        <label>Sex</label>
+        <div class="unit-toggle" role="group" aria-label="Sex">
+          <button type="button" class="opt-btn active" data-sex="male">Male</button>
+          <button type="button" class="opt-btn" data-sex="female">Female</button>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="age">Age (years)</label>
+          <input type="number" id="age" value="35" min="13" max="100" step="1" />
+        </div>
+        <div class="field">
+          <label for="heightCm">Height (cm)</label>
+          <input type="number" id="heightCm" value="178" min="120" max="230" step="1" />
+        </div>
+        <div class="field">
+          <label for="weightKg">Weight (kg)</label>
+          <input type="number" id="weightKg" value="84" min="30" max="250" step="0.5" />
+        </div>
+      </div>
+      <p class="field-note">Prefer pounds and inches? <button type="button" id="unitToggle" class="link-btn">Switch to imperial</button></p>
+
+      <div class="field">
+        <label for="activity">Activity level</label>
+        <select id="activity">
+          <option value="1.2">Sedentary — little or no exercise</option>
+          <option value="1.375">Light — exercise 1-3 days/week</option>
+          <option value="1.55" selected>Moderate — exercise 3-5 days/week</option>
+          <option value="1.725">Active — exercise 6-7 days/week</option>
+          <option value="1.9">Very active — hard exercise + physical job</option>
+        </select>
+      </div>
+
+      <div class="results">
+        <div class="result">
+          <span class="result-label">BMR</span>
+          <span class="result-value" id="outBmr">1,850 cal</span>
+        </div>
+        <div class="result result-primary">
+          <span class="result-label">TDEE (maintenance)</span>
+          <span class="result-value" id="outTdee">2,868 cal</span>
+        </div>
+      </div>
+
+      <div class="tdee-targets">
+        <div class="target-row">
+          <span>🎯 Fat loss</span>
+          <span id="outCut">2,368 cal/day</span>
+        </div>
+        <div class="target-row">
+          <span>⚖️ Maintenance</span>
+          <span id="outMaintain">2,868 cal/day</span>
+        </div>
+        <div class="target-row">
+          <span>💪 Lean gain</span>
+          <span id="outBulk">3,168 cal/day</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>How this is calculated:</strong> BMR uses the Mifflin-St Jeor equation (the standard most clinicians default to), then multiplied by an activity factor to get TDEE. Fat loss and lean gain targets are TDEE ± 500 / +300 calories — a reasonable starting point, not a prescription.
+    </div>
+
+    <p class="disclaimer-text"><strong>Disclaimer</strong>: This is a population-average estimate, not a metabolic test. Individual metabolism varies. Use this as a starting point and adjust based on your own results over a few weeks, and consult a healthcare provider or dietitian for personalized guidance — especially if you're also running a GLP-1 or metabolic protocol.</p>
+  </div>
+</Layout>
+
+<style>
+  .header { padding: 40px 20px 24px; }
+  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
+  h1 { margin: 6px 0 6px; }
+  .lede { color: var(--text-muted); max-width: 640px; }
+  .calc { padding: 0 20px 60px; max-width: 640px; }
+
+  .calc-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .field { margin-bottom: 20px; }
+  .field:last-of-type { margin-bottom: 0; }
+  .field-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  input[type="number"], select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+  }
+  .field-note {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 8px 0 20px;
+  }
+  .link-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--amber-red);
+    font-weight: 600;
+    font-size: 0.82rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .unit-toggle {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .opt-btn {
+    flex: 1;
+    padding: 10px 14px;
+    background: var(--white);
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+  .opt-btn.active {
+    background: var(--amber-red);
+    color: var(--white);
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .result {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  .result-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .result-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--navy);
+  }
+  .result-primary .result-value { color: var(--amber-red); }
+
+  .tdee-targets {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .target-row {
+    display: flex;
+    justify-content: space-between;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .callout {
+    margin-top: 24px;
+    background: var(--cream-dark, var(--cream));
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+  .disclaimer-text {
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  @media (max-width: 480px) {
+    .field-row { grid-template-columns: 1fr; }
+    .results { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const sexButtons = document.querySelectorAll<HTMLButtonElement>('.opt-btn[data-sex]');
+  const age = document.getElementById('age') as HTMLInputElement;
+  const heightCm = document.getElementById('heightCm') as HTMLInputElement;
+  const weightKg = document.getElementById('weightKg') as HTMLInputElement;
+  const activity = document.getElementById('activity') as HTMLSelectElement;
+  const unitToggle = document.getElementById('unitToggle')!;
+  const outBmr = document.getElementById('outBmr')!;
+  const outTdee = document.getElementById('outTdee')!;
+  const outCut = document.getElementById('outCut')!;
+  const outMaintain = document.getElementById('outMaintain')!;
+  const outBulk = document.getElementById('outBulk')!;
+
+  let sex: 'male' | 'female' = 'male';
+  let imperial = false;
+
+  function recalc() {
+    const ageVal = parseFloat(age.value) || 0;
+    const heightVal = parseFloat(heightCm.value) || 0;
+    const weightVal = parseFloat(weightKg.value) || 0;
+    const activityFactor = parseFloat(activity.value) || 1.2;
+
+    const heightCmVal = imperial ? heightVal * 2.54 : heightVal;
+    const weightKgVal = imperial ? weightVal * 0.453592 : weightVal;
+
+    const sexOffset = sex === 'male' ? 5 : -161;
+    const bmr = 10 * weightKgVal + 6.25 * heightCmVal - 5 * ageVal + sexOffset;
+    const tdee = bmr * activityFactor;
+
+    outBmr.textContent = `${Math.round(bmr).toLocaleString()} cal`;
+    outTdee.textContent = `${Math.round(tdee).toLocaleString()} cal`;
+    outCut.textContent = `${Math.round(tdee - 500).toLocaleString()} cal/day`;
+    outMaintain.textContent = `${Math.round(tdee).toLocaleString()} cal/day`;
+    outBulk.textContent = `${Math.round(tdee + 300).toLocaleString()} cal/day`;
+  }
+
+  sexButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      sex = btn.dataset.sex as 'male' | 'female';
+      sexButtons.forEach((b) => b.classList.toggle('active', b === btn));
+      recalc();
+    });
+  });
+
+  unitToggle.addEventListener('click', () => {
+    const heightLabel = document.querySelector('label[for="heightCm"]')!;
+    const weightLabel = document.querySelector('label[for="weightKg"]')!;
+
+    if (!imperial) {
+      // convert current values to imperial for display
+      heightCm.value = (parseFloat(heightCm.value) / 2.54).toFixed(1);
+      weightKg.value = (parseFloat(weightKg.value) / 0.453592).toFixed(1);
+      heightLabel.textContent = 'Height (in)';
+      weightLabel.textContent = 'Weight (lb)';
+      unitToggle.textContent = 'Switch to metric';
+    } else {
+      heightCm.value = (parseFloat(heightCm.value) * 2.54).toFixed(1);
+      weightKg.value = (parseFloat(weightKg.value) * 0.453592).toFixed(1);
+      heightLabel.textContent = 'Height (cm)';
+      weightLabel.textContent = 'Weight (kg)';
+      unitToggle.textContent = 'Switch to imperial';
+    }
+    imperial = !imperial;
+    recalc();
+  });
+
+  [age, heightCm, weightKg, activity].forEach((el) => el.addEventListener('input', recalc));
+  recalc();
+</script>
