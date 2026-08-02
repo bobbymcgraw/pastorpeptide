@@ -33,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
           <input type="number" id="weightKg" value="185" min="66" max="550" step="1" />
         </div>
       </div>
-      <p class="field-note">Prefer centimeters and kilos? <button type="button" id="unitToggle" class="link-btn">Switch to metric</button></p>
+      <p class="field-note"><span id="unitPrompt">Prefer centimeters and kilos?</span> <button type="button" id="unitToggle" class="link-btn">Switch to metric</button></p>
 
       <div class="field">
         <label for="activity">Activity level</label>
@@ -272,6 +272,7 @@ import Layout from '../layouts/Layout.astro';
   unitToggle.addEventListener('click', () => {
     const heightLabel = document.querySelector('label[for="heightCm"]')!;
     const weightLabel = document.querySelector('label[for="weightKg"]')!;
+    const unitPrompt = document.getElementById('unitPrompt')!;
 
     if (!imperial) {
       // convert current values to imperial for display
@@ -279,12 +280,14 @@ import Layout from '../layouts/Layout.astro';
       weightKg.value = (parseFloat(weightKg.value) / 0.453592).toFixed(1);
       heightLabel.textContent = 'Height (in)';
       weightLabel.textContent = 'Weight (lb)';
+      unitPrompt.textContent = 'Prefer centimeters and kilos?';
       unitToggle.textContent = 'Switch to metric';
     } else {
       heightCm.value = (parseFloat(heightCm.value) * 2.54).toFixed(1);
       weightKg.value = (parseFloat(weightKg.value) * 0.453592).toFixed(1);
       heightLabel.textContent = 'Height (cm)';
       weightLabel.textContent = 'Weight (kg)';
+      unitPrompt.textContent = 'Prefer pounds and inches?';
       unitToggle.textContent = 'Switch to imperial';
     }
     imperial = !imperial;
