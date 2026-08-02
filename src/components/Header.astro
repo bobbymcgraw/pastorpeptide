@@ -32,11 +32,13 @@ const path = Astro.url.pathname;
               {item.label} <span class="caret">▾</span>
             </a>
             <div class="dropdown-menu">
-              {item.children.map((child) => (
-                <a href={child.href} class={path.startsWith(child.href) ? 'active' : ''}>
-                  {child.label}
-                </a>
-              ))}
+              <div class="dropdown-menu-inner">
+                {item.children.map((child) => (
+                  <a href={child.href} class={path.startsWith(child.href) ? 'active' : ''}>
+                    {child.label}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         ) : (
@@ -141,20 +143,23 @@ const path = Astro.url.pathname;
     position: absolute;
     top: 100%;
     left: 0;
-    margin-top: 10px;
+    padding-top: 10px;
+    min-width: 210px;
+    display: none;
+  }
+  .nav-dropdown.open .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu-inner {
+    display: flex;
+    flex-direction: column;
     background: var(--navy);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 8px;
     padding: 6px;
-    min-width: 210px;
-    display: none;
-    flex-direction: column;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   }
-  .nav-dropdown.open .dropdown-menu {
-    display: flex;
-  }
-  .dropdown-menu a {
+  .dropdown-menu-inner a {
     color: rgba(255,255,255,0.75);
     font-size: 0.88rem;
     font-weight: 600;
@@ -163,8 +168,8 @@ const path = Astro.url.pathname;
     border-radius: 6px;
     white-space: nowrap;
   }
-  .dropdown-menu a:hover,
-  .dropdown-menu a.active {
+  .dropdown-menu-inner a:hover,
+  .dropdown-menu-inner a.active {
     background: rgba(255,255,255,0.08);
     color: var(--gold-light);
   }
@@ -174,10 +179,13 @@ const path = Astro.url.pathname;
     .site-nav { gap: 14px; }
     .dropdown-menu {
       position: static;
-      margin-top: 6px;
+      padding-top: 6px;
+      display: block;
+    }
+    .dropdown-menu-inner {
       box-shadow: none;
-      display: flex;
       border: none;
+      background: none;
       padding: 0 0 0 12px;
     }
   }
