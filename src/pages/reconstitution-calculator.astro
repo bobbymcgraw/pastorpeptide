@@ -486,6 +486,8 @@ import '../styles/calc-page.css';
 </style>
 
 <script>
+  import { reconstitution, blendDose, nasal as nasalMath } from '../lib/calc.js';
+
   const vialMg = document.getElementById('vialMg') as HTMLInputElement;
   const waterMl = document.getElementById('waterMl') as HTMLInputElement;
   const doseAmount = document.getElementById('doseAmount') as HTMLInputElement;
@@ -505,10 +507,7 @@ import '../styles/calc-page.css';
     const rawDose = parseFloat(doseAmount.value) || 0;
     const doseMg = doseUnit === 'mcg' ? rawDose / 1000 : rawDose;
 
-    const concentration = vial / water; // mg/mL
-    const volumeToDrawMl = concentration > 0 ? doseMg / concentration : 0;
-    const units = volumeToDrawMl * 100; // U-100 syringe
-    const dosesPerVial = doseMg > 0 ? vial / doseMg : 0;
+    const { concentration, volumeToDrawMl, units, dosesPerVial } = reconstitution(vial, water, doseMg);
 
     waterMlValue.textContent = `${water.toFixed(1)} mL`;
     outConcentration.textContent = `${concentration.toFixed(2)} mg/mL`;
@@ -613,9 +612,7 @@ import '../styles/calc-page.css';
       const mg = parseFloat(mgInput.value) || 0;
       const name = nameInput.value.trim() || `Peptide ${i + 1}`;
 
-      const concentration = mg / water; // mg/mL
-      const doseMg = concentration * drawMl;
-      const doseMcg = doseMg * 1000;
+      const { doseMg, doseMcg } = blendDose(mg, water, drawMl);
 
       const resultRow = document.createElement('div');
       resultRow.className = 'blend-result-row';
@@ -671,11 +668,7 @@ import '../styles/calc-page.css';
     const rawDose = parseFloat(nasalDoseAmount.value) || 0;
     const doseMg = nasalDoseUnit === 'mcg' ? rawDose / 1000 : rawDose;
 
-    const concentration = totalMg / liquidMl; // mg/mL
-    const mgPerSpray = concentration * sprayMl;
-    const mcgPerSpray = mgPerSpray * 1000;
-    const spraysNeeded = mgPerSpray > 0 ? doseMg / mgPerSpray : 0;
-    const totalSprays = sprayMl > 0 ? liquidMl / sprayMl : 0;
+    const { concentration, mgPerSpray, mcgPerSpray, spraysNeeded, totalSprays } = nasalMath(totalMg, liquidMl, sprayMl, doseMg);
 
     nasalLiquidMlValue.textContent = `${liquidMl.toFixed(1)} mL`;
     nasalOutConcentration.textContent = `${concentration.toFixed(2)} mg/mL`;

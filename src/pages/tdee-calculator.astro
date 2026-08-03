@@ -215,6 +215,8 @@ import '../styles/calc-page.css';
 </style>
 
 <script>
+  import { tdee as calcTdee, lbToKg, inToCm } from '../lib/calc.js';
+
   const sexButtons = document.querySelectorAll<HTMLButtonElement>('.opt-btn[data-sex]');
   const age = document.getElementById('age') as HTMLInputElement;
   const heightCm = document.getElementById('heightCm') as HTMLInputElement;
@@ -236,18 +238,16 @@ import '../styles/calc-page.css';
     const weightVal = parseFloat(weightKg.value) || 0;
     const activityFactor = parseFloat(activity.value) || 1.2;
 
-    const heightCmVal = imperial ? heightVal * 2.54 : heightVal;
-    const weightKgVal = imperial ? weightVal * 0.453592 : weightVal;
+    const heightCmVal = imperial ? inToCm(heightVal) : heightVal;
+    const weightKgVal = imperial ? lbToKg(weightVal) : weightVal;
 
-    const sexOffset = sex === 'male' ? 5 : -161;
-    const bmr = 10 * weightKgVal + 6.25 * heightCmVal - 5 * ageVal + sexOffset;
-    const tdee = bmr * activityFactor;
+    const { bmr, tdee: tdeeTotal, cut, maintain, bulk } = calcTdee(weightKgVal, heightCmVal, ageVal, sex, activityFactor);
 
     outBmr.textContent = `${Math.round(bmr).toLocaleString()} cal`;
-    outTdee.textContent = `${Math.round(tdee).toLocaleString()} cal`;
-    outCut.textContent = `${Math.round(tdee - 500).toLocaleString()} cal/day`;
-    outMaintain.textContent = `${Math.round(tdee).toLocaleString()} cal/day`;
-    outBulk.textContent = `${Math.round(tdee + 300).toLocaleString()} cal/day`;
+    outTdee.textContent = `${Math.round(tdeeTotal).toLocaleString()} cal`;
+    outCut.textContent = `${Math.round(cut).toLocaleString()} cal/day`;
+    outMaintain.textContent = `${Math.round(maintain).toLocaleString()} cal/day`;
+    outBulk.textContent = `${Math.round(bulk).toLocaleString()} cal/day`;
   }
 
   sexButtons.forEach((btn) => {
