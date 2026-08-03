@@ -6,13 +6,19 @@ import { makeExcerpt } from '../../lib/excerpt';
 
 export async function getStaticPaths() {
   const compounds = await getCollection('compounds');
-  return compounds.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
+  return compounds.map((entry) => {
+    const related = compounds
+      .filter((c) => c.data.group === entry.data.group && c.slug !== entry.slug)
+      .sort((a, b) => a.data.title.localeCompare(b.data.title))
+      .slice(0, 4);
+    return {
+      params: { slug: entry.slug },
+      props: { entry, related },
+    };
+  });
 }
 
-const { entry } = Astro.props;
+const { entry, related } = Astro.props;
 const { Content } = await entry.render();
 const description = makeExcerpt(entry.body);
 ---
@@ -26,4 +32,47 @@ const description = makeExcerpt(entry.body);
   description={description}
 >
   <Content />
+  {related.length > 0 && (
+    <div class="related-compounds" style={`--accent-color: ${COMPOUND_GROUP_COLORS[entry.data.group] || 'var(--gold)'}`}>
+      <h3>Related in {entry.data.group}</h3>
+      <div class="related-grid">
+        {related.map((r) => (
+          <a class="related-card" href={`/compounds/${r.slug}`}>{r.data.title}</a>
+        ))}
+      </div>
+    </div>
+  )}
 </ArticleLayout>
+
+<style>
+  .related-compounds {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .related-compounds h3 {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0 0 14px;
+    font-weight: 600;
+  }
+  .related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .related-card {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--accent-color, var(--border));
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .related-card:hover {
+    background: var(--accent-color, var(--gold));
+    color: var(--white);
+  }
+</style>
