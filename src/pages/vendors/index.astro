@@ -7,7 +7,7 @@ const vendors = await getCollection('vendors');
 vendors.sort((a, b) => a.data.title.localeCompare(b.data.title));
 const grouped = groupBy(vendors, VENDOR_GROUP_ORDER);
 ---
-<Layout title="Vendor Reviews">
+<Layout title="Vendor Reviews" description={`${vendors.length} vendor write-ups and buying guides — discernment before you spend your money on anyone.`}>
   <div class="wrap header">
     <a class="back" href="/seminary">&larr; The Seminary</a>
     <span class="chapter-label">The Shepherd's Ledger</span>

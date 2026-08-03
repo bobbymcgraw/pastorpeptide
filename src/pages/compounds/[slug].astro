@@ -2,6 +2,7 @@
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection } from 'astro:content';
 import { COMPOUND_GROUP_COLORS } from '../../lib/groups';
+import { makeExcerpt } from '../../lib/excerpt';
 
 export async function getStaticPaths() {
   const compounds = await getCollection('compounds');
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const description = makeExcerpt(entry.body);
 ---
 <ArticleLayout
   title={entry.data.title}
@@ -21,6 +23,7 @@ const { Content } = await entry.render();
   backHref="/compounds"
   backLabel="Encyclopedia"
   accentColor={COMPOUND_GROUP_COLORS[entry.data.group]}
+  description={description}
 >
   <Content />
 </ArticleLayout>

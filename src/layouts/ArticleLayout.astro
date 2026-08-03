@@ -8,10 +8,11 @@ interface Props {
   backHref: string;
   backLabel: string;
   accentColor?: string;
+  description?: string;
 }
-const { title, group, tags = [], backHref, backLabel, accentColor } = Astro.props;
+const { title, group, tags = [], backHref, backLabel, accentColor, description } = Astro.props;
 ---
-<Layout title={title}>
+<Layout title={title} description={description}>
   <div class="wrap article" style={accentColor ? `--accent-color: ${accentColor}` : undefined}>
     {accentColor && <div class="accent-bar"></div>}
     <a class="back" href={backHref}>&larr; {backLabel}</a>

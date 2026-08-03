@@ -7,7 +7,7 @@ const compounds = await getCollection('compounds');
 compounds.sort((a, b) => a.data.title.localeCompare(b.data.title));
 const grouped = groupBy(compounds, COMPOUND_GROUP_ORDER);
 ---
-<Layout title="Peptide Encyclopedia">
+<Layout title="Peptide Encyclopedia" description={`${compounds.length} compounds, organized by category and searchable by name — dosing, mechanism, and stacking notes for each one.`}>
   <div class="wrap header">
     <a class="back" href="/seminary">&larr; The Seminary</a>
     <span class="chapter-label">The Book of Peptides</span>

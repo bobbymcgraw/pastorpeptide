@@ -1,6 +1,7 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection } from 'astro:content';
+import { makeExcerpt } from '../../lib/excerpt';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides');
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const description = makeExcerpt(entry.body);
 ---
 <ArticleLayout
   title={entry.data.title}
@@ -19,6 +21,7 @@ const { Content } = await entry.render();
   tags={entry.data.tags}
   backHref="/guides"
   backLabel="Guides"
+  description={description}
 >
   <Content />
 </ArticleLayout>
