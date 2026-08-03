@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../styles/calc-page.css';
 ---
 <Layout title="Reconstitution Calculator" description="Work out concentration, draw volume, and syringe units for any peptide vial and dose — plus blend dosing and intranasal calculators.">
   <div class="wrap header">
@@ -200,11 +201,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  .header { padding: 40px 20px 24px; }
-  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
-  h1 { margin: 6px 0 6px; }
-  .lede { color: var(--text-muted); max-width: 640px; }
-  .calc { padding: 0 20px 60px; max-width: 640px; }
 
   .primer { margin-bottom: 36px; }
   .primer h2 { margin: 0 0 4px; font-size: 1.4rem; }
@@ -482,12 +478,6 @@ import Layout from '../layouts/Layout.astro';
     color: var(--text);
   }
   .callout-tip { background: rgba(226, 71, 55, 0.08); }
-  .disclaimer-text {
-    margin-top: 20px;
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    font-style: italic;
-  }
 
   @media (max-width: 480px) {
     .results { grid-template-columns: repeat(2, 1fr); }

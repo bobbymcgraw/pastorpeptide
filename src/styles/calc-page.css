@@ -1,0 +1,12 @@
+/* Shared chrome for standalone calculator pages (reconstitution, TDEE). */
+.header { padding: 40px 20px 24px; }
+.back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
+h1 { margin: 6px 0 6px; }
+.lede { color: var(--text-muted); max-width: 640px; }
+.calc { padding: 0 20px 60px; max-width: 640px; }
+.disclaimer-text {
+  margin-top: 20px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+}

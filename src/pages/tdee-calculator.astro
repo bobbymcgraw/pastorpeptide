@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../styles/calc-page.css';
 ---
 <Layout title="Calorie Calculator" description="Find your maintenance calories (TDEE) with the Mifflin-St Jeor formula, plus fat-loss and lean-gain targets — useful context for any GLP-1 protocol.">
   <div class="wrap header">
@@ -82,11 +83,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  .header { padding: 40px 20px 24px; }
-  .back { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; }
-  h1 { margin: 6px 0 6px; }
-  .lede { color: var(--text-muted); max-width: 640px; }
-  .calc { padding: 0 20px 60px; max-width: 640px; }
 
   .calc-card {
     background: var(--cream);
@@ -212,13 +208,6 @@ import Layout from '../layouts/Layout.astro';
     font-size: 0.92rem;
     color: var(--text);
   }
-  .disclaimer-text {
-    margin-top: 20px;
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    font-style: italic;
-  }
-
   @media (max-width: 480px) {
     .field-row { grid-template-columns: 1fr; }
     .results { grid-template-columns: 1fr; }
