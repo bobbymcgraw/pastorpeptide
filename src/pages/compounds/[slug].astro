@@ -1,6 +1,7 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection } from 'astro:content';
+import { COMPOUND_GROUP_COLORS } from '../../lib/groups';
 
 export async function getStaticPaths() {
   const compounds = await getCollection('compounds');
@@ -19,6 +20,7 @@ const { Content } = await entry.render();
   tags={entry.data.tags}
   backHref="/compounds"
   backLabel="Encyclopedia"
+  accentColor={COMPOUND_GROUP_COLORS[entry.data.group]}
 >
   <Content />
 </ArticleLayout>

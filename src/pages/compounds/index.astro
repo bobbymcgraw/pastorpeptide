@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { COMPOUND_GROUP_ORDER, groupBy } from '../../lib/groups';
+import { COMPOUND_GROUP_ORDER, COMPOUND_GROUP_COLORS, groupBy } from '../../lib/groups';
 
 const compounds = await getCollection('compounds');
 compounds.sort((a, b) => a.data.title.localeCompare(b.data.title));
@@ -21,8 +21,8 @@ const grouped = groupBy(compounds, COMPOUND_GROUP_ORDER);
 
   <div class="wrap groups" id="groupsWrap">
     {grouped.map(({ group, items }) => (
-      <section class="group" data-group>
-        <h2>{group}</h2>
+      <section class="group" data-group style={`--accent-color: ${COMPOUND_GROUP_COLORS[group] || 'var(--gold)'}`}>
+        <h2><span class="group-dot"></span>{group}</h2>
         <div class="grid grid-cards">
           {items.map((c) => (
             <a class="card" href={`/compounds/${c.slug}`} data-title={c.data.title.toLowerCase()}>
@@ -82,8 +82,22 @@ const grouped = groupBy(compounds, COMPOUND_GROUP_ORDER);
     margin-top: 0;
     font-size: 1.15rem;
     color: var(--navy);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--accent-color, var(--border));
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .group-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-color, var(--gold));
+    flex-shrink: 0;
+  }
+  .group .card {
+    border-top: 3px solid var(--accent-color, var(--border));
   }
   .no-results {
     margin-top: 40px;

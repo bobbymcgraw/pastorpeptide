@@ -12,6 +12,20 @@ export const COMPOUND_GROUP_ORDER = [
   'Bioregulators',
 ];
 
+export const COMPOUND_GROUP_COLORS: Record<string, string> = {
+  'Growth Hormone Secretagogues & Analogues': 'var(--deep-blue)',
+  'GLP1s': 'var(--amber-red)',
+  'Metabolic & Weight Management': 'var(--clay)',
+  'Healing, Recovery & Anti-Inflammatory': 'var(--moss)',
+  'Cognitive and Neurological': 'var(--sky)',
+  'Anti-Aging, Longevity, and Cellular Health': 'var(--grit)',
+  'Antimicrobial and Immune Support': 'var(--green)',
+  "Reproductive, Sexual & Libido-Enhancing": 'color-mix(in srgb, var(--amber-red) 60%, var(--clay))',
+  'Hair, Skin, & Nails': 'color-mix(in srgb, var(--sky) 55%, var(--sand))',
+  "Other Peptides & Amino's": 'var(--warm-gray)',
+  'Bioregulators': 'color-mix(in srgb, var(--moss) 60%, var(--deep-blue))',
+};
+
 export const GUIDE_GROUP_ORDER = [
   'Peptide 101',
   'Seminary 101',
