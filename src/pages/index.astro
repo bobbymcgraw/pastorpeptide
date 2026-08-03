@@ -81,6 +81,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="section" id="ch1">
+      <div class="chapter-accent" style="background: var(--deep-blue)"></div>
       <span class="chapter-label">Chapter 1</span>
       <h2>🧬 What Are Peptides?</h2>
       <p class="chapter-sub"><em>In the beginning, there were amino acids</em></p>
@@ -98,6 +99,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="section" id="ch2">
+      <div class="chapter-accent" style="background: var(--clay)"></div>
       <span class="chapter-label">Chapter 2</span>
       <h2>📖 Learn Before You Buy</h2>
       <p class="chapter-sub"><em>Sunday School comes before the sermon</em></p>
@@ -117,6 +119,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="section" id="ch3">
+      <div class="chapter-accent" style="background: var(--moss)"></div>
       <span class="chapter-label">Chapter 3</span>
       <h2>🌱 Where to Start</h2>
       <p class="chapter-sub"><em>The First Commandment of Peptides</em></p>
@@ -136,6 +139,7 @@ import Layout from '../layouts/Layout.astro';
       <p>Start simple. Pay attention. Then build. This is the way.</p>
     </section>
     <section class="section" id="ch4">
+      <div class="chapter-accent" style="background: var(--sky)"></div>
       <span class="chapter-label">Chapter 4</span>
       <h2>🏪 Buying Direct — What to Look For</h2>
       <p class="chapter-sub"><em>Vendor Discernment 101</em></p>
@@ -148,6 +152,7 @@ import Layout from '../layouts/Layout.astro';
       <p>Start with <strong>U.S. vendors</strong> while you're getting your footing. Lower risk, easier payment, faster shipping. Once you're comfortable, you can explore further — including the full <a href="/vendors">Seminary vendor reviews</a>.</p>
     </section>
     <section class="section" id="ch5">
+      <div class="chapter-accent" style="background: var(--grit)"></div>
       <span class="chapter-label">Chapter 5</span>
       <h2>🇺🇸 Trusted U.S. Vendors</h2>
       <p class="chapter-sub"><em>The Shepherd's Approved Flock</em></p>
@@ -191,6 +196,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
     <section class="section" id="ch6">
+      <div class="chapter-accent" style="background: var(--green)"></div>
       <span class="chapter-label">Chapter 6</span>
       <h2>🌑 Going Gray — Chinese Vendors</h2>
       <p class="chapter-sub"><em>Advanced Theology</em></p>
@@ -224,6 +230,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
     <section class="section" id="ch7">
+      <div class="chapter-accent" style="background: var(--deep-blue)"></div>
       <span class="chapter-label">Chapter 7</span>
       <h2>🛒 Buy the Basics</h2>
       <p class="chapter-sub"><em>The offering plate is open</em></p>
@@ -236,6 +243,7 @@ import Layout from '../layouts/Layout.astro';
       </ul>
     </section>
     <section class="section" id="ch8">
+      <div class="chapter-accent" style="background: var(--clay)"></div>
       <span class="chapter-label">Chapter 8</span>
       <h2>📐 How Much to Buy</h2>
       <p class="chapter-sub"><em>The Parable of the 8-Week Window</em></p>
@@ -246,6 +254,7 @@ import Layout from '../layouts/Layout.astro';
       <p>When in doubt, reach out. The Pastor does not leave his sheep lost in dosing math.</p>
     </section>
     <section class="section" id="ch9">
+      <div class="chapter-accent" style="background: var(--moss)"></div>
       <span class="chapter-label">Chapter 9</span>
       <h2>🧪 Yes, You Have to Mix Them</h2>
       <p class="chapter-sub"><em>On the sacred art of reconstitution</em></p>
@@ -262,6 +271,7 @@ import Layout from '../layouts/Layout.astro';
       <p>The congregation has spoken: the first mix is the hardest. After that, it's as routine as your morning coffee.</p>
     </section>
     <section class="section" id="ch10">
+      <div class="chapter-accent" style="background: var(--sky)"></div>
       <span class="chapter-label">Chapter 10</span>
       <h2>🩸 Know Your Numbers</h2>
       <p class="chapter-sub"><em>The Tithe of Data</em></p>
@@ -272,6 +282,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="callout">🔢 Want a baseline for calories, not just labs? Try the <a href="/tdee-calculator"><strong>Calorie Calculator</strong></a> — useful context whether you're running a GLP-1 protocol or just tracking your maintenance number.</div>
     </section>
     <section class="section" id="ch11">
+      <div class="chapter-accent" style="background: var(--grit)"></div>
       <span class="chapter-label">Chapter 11</span>
       <h2>📋 The Peptide Quick-Reference Spreadsheet</h2>
       <p class="chapter-sub"><em>The Scripture Index</em></p>
@@ -279,6 +290,7 @@ import Layout from '../layouts/Layout.astro';
       <p>Instead of sorting through scattered sources or conflicting testimonies from the internet, you'll have a clean, consolidated guide. Your peptide hymnal. Reference it often. For the full written scripture on each compound, see <a href="/compounds">the Seminary encyclopedia</a>.</p>
     </section>
     <section class="section" id="ch12">
+      <div class="chapter-accent" style="background: var(--green)"></div>
       <span class="chapter-label">Chapter 12</span>
       <h2>🔍 Can't Find What You're Looking For?</h2>
       <p class="chapter-sub"><em>Lost Sheep Finder</em></p>
@@ -286,6 +298,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="section" id="ch13">
+      <div class="chapter-accent" style="background: var(--deep-blue)"></div>
       <span class="chapter-label">Chapter 13</span>
       <h2>✈️ Flying With Peptides</h2>
       <p class="chapter-sub"><em>Traveling Testimony</em></p>
@@ -684,6 +697,12 @@ import Layout from '../layouts/Layout.astro';
 
   .section {
     padding: 48px 0 0;
+  }
+  .chapter-accent {
+    width: 44px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 12px;
   }
   .section + .section {
     border-top: 1px solid var(--border);
